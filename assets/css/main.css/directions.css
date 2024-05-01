@@ -1,0 +1,99 @@
+/* CSS для риски між кругами */
+.slide-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -150px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+
+.info-circle {
+    width: 37px;
+    height: 37px;
+    background-color: hwb(36 6% 65%);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    z-index: 2; /* Розташовуємо риску за кругами */
+    position: relative; /* Задаємо позицію relative */
+   
+}
+
+.info-circle:nth-child(2) {
+    background-color:  hsl(54, 26%, 38%);
+}
+
+.info-circle:nth-child(3) {
+    background-color: hsl(54, 26%, 38%);
+}
+
+/* CSS для риски між кругами */
+.info-circle::after {
+    content: '';
+    width: 100%; /* Простягаємо риску на всю ширину сторінки */
+    height: 5px; /* Збільшуємо висоту риски */
+    background-color: hwb(30 99% 0%);
+    position: absolute;
+    bottom: calc(50% - 7px); /* Позиція риски під кругами */
+    left: 0;
+    margin-left: calc(-50vw + 50%); /* Вирівнюємо риску відносно центру сторінки */
+    z-index: -1; /* Розташовуємо риску за кругами */
+}
+
+.info-item p {
+    font-family: Arial, sans-serif; /* Встановлюємо шрифт Arial або, у відсутності його, застосовуємо загальні шрифти без засічок */
+    font-size: 18px; /* Задаємо розмір шрифту */
+    font-weight: bold; /* Задаємо жирний стиль шрифту */
+    color: #333; /* Задаємо колір тексту */
+}
+
+/* Стилі для блоку з напрямками */
+.directions {
+    display: flex;
+    flex-direction: row; /* Змінено напрямок розташування елементів на горизонтальний */
+    align-items: center; /* Центруємо елементи по вертикалі */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    margin-top: 390px; /* Змінений верхній відступ для центрування */
+}
+
+/* Стилі для фотографії в блоку з напрямками */
+.photo {
+    width: 120px; /* Збільшена ширина фото */
+    height: 120px; /* Збільшена висота фото */
+    border-radius: 50%; /* Закруглення країв фото */
+    margin-right: 20px; /* Доданий відступ між фото та текстом */
+}
+
+
+
+/* Стилі для тексту напрямків */
+.direction p {
+    font-family: 'Roboto', sans-serif; /* Шрифт */
+    font-size: 18px; /* Збільшений розмір шрифту */
+    color: #333; /* Колір тексту */
+    margin: 8px 0; /* Збільшені відступи між абзацами */
+}
+
+
+/* Плавне збільшення при наведенні миші */
+.directions-container:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

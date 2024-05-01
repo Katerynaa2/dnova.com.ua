@@ -1,0 +1,89 @@
+/* Стилі для шапки */
+.bottom-fixed-container {
+    position: fixed; /* Делает блок фиксированным */
+    top: 0; /* Размещает блок вверху окна браузера */
+    width: 100%; /* Устанавливает ширину контейнера на 100% ширины родительского элемента */
+    max-width: 100% ; /* Устанавливает максимальную ширину контейнера на 1200 пикселей */
+    margin: 0 auto; /* Устанавливает автоматические отступы слева и справа (центрирование) */
+    background-color: #f0f0f0; /* Задает цвет фона контейнера */
+    z-index: 1000;
+    
+    
+}
+
+.header h1 {
+    position: fixed;
+    top: 0;
+    left: 90px;/* Задаємо відступ справа */
+    margin-top: 62px; /* Задаємо відступ зверху */
+    color: #333; /* Колір тексту */
+    font-size: 11px; /* Розмір шрифту */
+    font-family: 'Montserrat', sans-serif; /* Шрифт */
+}
+
+
+
+.header img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 335px; /* ширина логотипу */
+    height: auto; /* автоматично обчислює висоту, щоб зберегти співвідношення сторін */
+}
+
+
+.header {
+    padding-top: 80px; /* Встановлює внутрішні відступи зверху */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    background-image:url("C:\Users\Admin\Downloads\msg5277396980-40723.jpg") ;
+
+    
+    
+}
+
+    
+    
+/* навігація  */
+.nav {
+    font-size: 14px;/* РОЗМІР НАВІГАЦІЇ */
+    text-transform: uppercase;/* верхній ригістр */
+    text-align: center;/* РОЗМІЩЕНИЙ ПО ЦЕНТРУ */
+    margin-top: 15px;
+
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color:rgb(12, 15, 13);
+    text-decoration: none;
+    transition: color .1s linear;
+    /* font-weight: bold; /* Додано властивість для зроблення букв жирнішими  hsl(263, 87%, 50%) */
+}
+
+.nav__link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #643f13;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+    transition: opacity 0.1 linear;
+}
+
+.nav__link:hover {
+    color: #634019;/* коли наводиш букви змінють колір */
+}
+
+.nav__link:hover:after {
+    opacity: 1;/* Встановлює непрозорість псевдоелемента на 1 при наведенні курсора на елемент з класом .nav__link */
+}
+

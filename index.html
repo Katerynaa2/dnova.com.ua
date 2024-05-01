@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візитка Компанії</title>
+    <link rel="stylesheet" href="assets/css/main.css/advantages.css">
+    <link rel="stylesheet" href="assets/css/main.css/header.css">
+
+    <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
+    <link rel="stylesheet" href="assets/css/main.css/responsive.css">
+    <link rel="stylesheet" href="assets/css/main.css/slideshow.css">
+    <link rel="stylesheet" href="assets/css/main.css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css/directions.css">
+    <link rel="stylesheet" href="assets/css/main.css/partners.css">
+    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+    <link rel="stylesheet" href="assets/css/service.styles/service.css">
+    <link rel="stylesheet" href="assets/css/main.css/service-popup.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <script src="slideshow.js" defer></script>
+    <script src="partners.js" defer></script>
+    <script src="services.js" defer></script>
+
+    <script src="contact.js" defer></script>
+
+
+</head>
+<body>
+
+    <div class="bottom-fixed-container">
+        <div class="header">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Компанії">
+            </a>
+            
+            <nav class="nav">
+                <a class="nav__link" href="news.html">Новини</a>
+                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> <!-- Додано ID -->
+                <a class="nav__link" href="objects.html">Об'єкти</a>
+                <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
+                <a class="nav__link" href="awards.html">Нагороди</a>
+                <a class="nav__link" href="documentation.html">Документація</a>
+                <a class="nav__link" href="vacancies.html">Вакансії</a>
+                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
+                <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Вікно каталогу послуг -->
+
+    <div class="service-popup" id="servicePopup">
+        <button>Комплексне будівництво</button>
+        <button>Інженерні системи</button>
+        <button>Інжинірінгова діяльність у сфері будіництва</button>
+        <button>Енергозберігаючі рішення</button>
+    </div>
+    
+    
+    <div class="catalog-popup" id="catalogPopup">
+        <h2>Контакти</h2>
+        <p>
+            <strong>Ярослав Чемеринський</strong><br>
+            <em>Директор</em><br><br>
+            <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+            <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+            <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+            79014 м. Львів<br>
+            вул. Мучна 23, офіс 4<br>
+            <strong>Email:</strong> office@denova.сom.ua<br>
+            <strong>Website:</strong> denovs.com.ua
+        </p>
+    </div>
+    
+    
+    <div class="slide-show mid">
+        <div class="slides">
+            <input type="radio" name="btn" id="btn2" checked>
+            <input type="radio" name="btn" id="btn3">
+            <input type="radio" name="btn" id="btn4">
+            <input type="radio" name="btn" id="btn5">
+            <div class="slide slide2">
+                <img src="images/image2.jpg">
+            </div>
+            <div class="slide slide3">
+                <img src="images/image3.jpg">
+            </div>
+            <div class="slide slide4">
+                <img src="images/image4.jpg">
+            </div>
+            <div class="slide slide5">
+                <img src="images/image5.jpg">
+            </div>
+        </div>
+        <div class="navigation">
+            <label for="btn2" class="nav2" style="--t:#a4b0be"></label>
+            <label for="btn3" class="nav2" style="--t:#a4b0be"></label>
+            <label for="btn4" class="nav2" style="--t:#a4b0be"></label>
+            <label for="btn5" class="nav2" style="--t:#a4b0be"></label>
+        </div>
+    </div>
+    <div class="combined-container">
+        <!-- Полоска з куружечками та текстом -->
+        <div class="slide-info">
+            <div class="info-item">
+                <div class="info-circle"></div>
+                <p>З 2001 РОКУ</p>
+            </div>
+            <div class="info-item">
+                <div class="info-circle"></div>
+                <p>18 ПРОЕКТІВ</p>
+            </div>
+            <div class="info-item">
+                <div class="info-circle"></div>
+                <p>12 МІСТ УКРАЇНИ</p>
+            </div>
+        </div>
+    
+        <!-- Блок з напрямками -->
+        <div class="directions container">    
+            <div class="directions">
+                <img src="images/directions.jpg" alt="Your Photo" class="photo">
+                <div class="direction">
+                    <p class="aligned"><a href="link_to_engineering_activity">• Інжинірингова діяльність у сфері будівництва</a></p>
+                    <p class="aligned"><a href="link_to_complex_construction">• Комплексне будівництво</a></p>
+                    <p class="aligned"><a href="link_to_engineering_networks">• Інженерні мережі</a></p>
+                    <p class="aligned"><a href="link_to_energy_efficient_solutions">• Енергозберігаючі рішення</a></p>
+                    <p class="aligned"><a href="link_to_comprehensive_service">• Комплексне сервісне обслуговування</a></p>
+
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="advantages"style = "margin-top:100px">
+            <img src="images/переваги.jpg" alt="Your Photo" class="photos" style="float: left; margin-right: 20px; width: 200px; height: auto; ">
+            <div style="overflow: auto;">
+            <div class="advantage">
+            <p class="aligned">• Реалізуємо проєкти "під ключ"</p>
+            <p class="aligned">• Вступаємо генеральним підприємцем у будівництві</p>
+            <p class="aligned">• Розробляємо всі необхідні проектні рішення для виконання монтажних та будівельних робіт</p>
+            <p class="aligned">• Працюємо тільки з сертифікованим обладнанням</p>
+            <p class="aligned">• Впроваджуємо оптимальні варіанти альтернативних джерел енергії</p>
+            <p class="aligned">• Працюємо з матеріалами за ціною від виробника</p>
+            <p class="aligned">• Оптимізуємо витрати та заощаджуємо бюджет на реалізацію проєкту</p>
+            <p class="aligned">• Забезпечуємо комплексне сервісне обслуговування</p>
+    </div>   
+            </div>
+        </div>
+
+        <div class="partners container"style = "margin-top:100px">
+            <h2>Нам довіряють</h2>
+            <div class="partner-slideshow">
+                <div class="partner-slide fade">
+                    <img src="images/partners/Abto_logo.jpg" alt="Партнер 1">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/avalon.png" alt="Партнер 2">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/bader.png" alt="Партнер 3">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/bankuk.png" alt="Партнер 4">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/dzherelo.jpg" alt="Партнер 5">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/eleks.png" alt="Партнер 6">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/forum_apartments.png" alt="Партнер 7">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/lan_logo_52ecb2efcc42bd70cd23f4e5b2c5b167.png" alt="Партнер 8">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/levdevelopment.jpg" alt="Партнер 9">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/logo_u.png" alt="Партнер 10">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/LPP_LOGO.jpg" alt="Партнер 11">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/Lvivgaz.png" alt="Партнер 12">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/madek.png" alt="Партнер 13">
+                </div>
+                
+                <div class="partner-slide fade">
+                    <img src="images/partners/praud.jpg" alt="Партнер 14">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/solovit_TRANS.png" alt="Партнер 15">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/tbfruit.png" alt="Партнер 16">
+                </div>
+                
+                <div class="partner-slide fade">
+                    <img src="images/partners/ukreksimbank.png" alt="Партнер 17">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/барком.jpg" alt="Партнер 18">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/Високий_замок,_.png" alt="Партнер 19">
+                </div>
+                
+                <div class="partner-slide fade">
+                    <img src="images/partners/зіко.jpg" alt="Партнер 20">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/мыстекспрес.png" alt="Партнер 21">
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partners/РІЕЛ.png" alt="Партнер 22">
+                </div>
+                
+                <div class="partner-slide fade">
+                    <img src="images/partner1.jpg" alt="Партнер 23">
+                    <p>Назва партнера 1</p>
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partner2.jpg" alt="Партнер 24">
+                    <p>Назва партнера 2</p>
+                </div>
+                <div class="partner-slide fade">
+                    <img src="images/partner3.jpg" alt="Партнер 25">
+                    <p>Назва партнера 3</p>
+                </div>                            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div class="footers container "style =  "margin-top:100px">
+            <footer class="footer">
+                <img src="images/photo1713649534.jpeg" alt="Your Photo" class="photos" style="float: left; margin-right: 20px; width: 350px; height: 350px;">
+                <div style="overflow: auto;">
+                    <h3>Про компанію</h3>
+                    <p>Компанія «Денова» працює на ринку з березня 2011 року і пропонує широкий спектр високоякісних послуг з проектування, будівництва, монтажу інженерних мереж, інжинірингу, енергозбереження.</p>
+                    <p>За відносно короткий період існування компанії успішно реалізовано ряд проектів у містах Хмельницьку, Маріуполі, Харкові, Черкасах та Івано-Франківську.</p>
+                    <p>Колектив компанії - це висококваліфіковані спеціалісти з багаторічним досвідом роботи, професіонали своєї справи, що приймали безпосередню участь в організації будівництва та зведенні знакових об’єктів західної та центральної України (торгово-розважальні комплекси, туристично-відпочинкові комплекси, спортивні комплекси та ін.).</p>
+                    <p>Сьогодні компанія займається комплексним проектуванням об’єктів архітектури з акцентом на збереження енергії, монтажем інженерних систем будівель та споруд, а також організацією будівництва об’єктів. Серед пріоритетних напрямків нашої діяльності - енергоаудит та біоенергетика, впровадження енергозберігаючих технологій та альтернативних джерел енергії. Ми не просто крокуємо в ногу з часом, ми  його випереджаємо!</p>
+                </div>
+            </footer>
+        </div>
+        <h3>Ексклюзивні пропозиції:</h3>
+        <ol>
+            <li><a href="My publications - nasosy_2017 (2).pdf" target="_blank">Встановлення теплового насосу з відбором тепла з каналізаційних стоків.</a></li>
+            <li><a href="yourfile.pdf" target="_blank">Виготовлення та реалізація збірних дерев’яних будинків</a></li>
+        </ol>
+        <style>
+ol {
+    list-style-type: none; /* Відключаємо тип нумерації */
+    margin-left: 20px; /* Відступ від лівого краю */
+}
+
+ol li {
+    margin-bottom: 10px; /* Відступ між елементами списку */
+}
+
+ol li a {
+    text-decoration: none; /* Відключаємо підкреслення посилань */
+    color: #007bff; /* Колір посилань */
+}
+
+ol li a:hover {
+    text-decoration: underline; /* Підкреслюємо посилання при наведенні */
+}
+
+
+
+</style>
+        
+
+
+
+<div class="bottom-container"style="margin-top: 30px;">
+    <img src="images/logo.png" alt="Логотип Компанії">
+    <nav class="nav">
+        <a class="nav__link" href="#news">Новини</a>
+        <a class="nav__link" href="#services">Послуги</a>
+        <a class="nav__link" href="#objects">Об'єкти</a>
+        <a class="nav__link" href="#partners">Партнери</a>
+        <a class="nav__link" href="#awards">Нагороди</a>
+        <a class="nav__link" href="#documentation">Документація</a>
+        <a class="nav__link" href="#vacancies">Вакансії</a>
+        <a class="nav__link" href="#contact">Контакти</a>
+    </nav>
+
+    <div class="contact-info">
+        <p>Контактна інформація:</p>
+        <p>Телефон: +123456789</p>
+        <p>Email: info@example.com</p>
+    </div>
+
+</div>
+</body>

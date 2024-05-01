@@ -1,0 +1,27 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    text-align: center;
+}
+
+.project img {
+    width: 300px; /* Регулюйте розмір зображення за необхідності */
+    height: auto;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.description h3 {
+    font-size: 18px;
+}
+
+.description p {
+    font-size: 14px;
+}

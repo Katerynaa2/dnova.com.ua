@@ -1,0 +1,14 @@
+/* Стилі для адаптивного дизайну */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav__link {
+        margin: 5px 0;
+    }
+
+    .advantage {
+        flex-basis: calc(50% - 20px);
+    }
+}

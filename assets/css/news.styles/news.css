@@ -1,0 +1,26 @@
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    margin-bottom: 30px; /* Відступ між кожним елементом */
+}
+
+.news-item h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Відступ нижче заголовка */
+    font-size: 24px;
+}
+
+.news-item h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.news-item p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #666;
+}
+

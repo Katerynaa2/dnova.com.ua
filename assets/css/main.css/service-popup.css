@@ -1,0 +1,24 @@
+.service-popup {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-popup button {
+    display: block; /* Зробити кнопки блочними елементами, щоб вони були в один стовпчик */
+    padding: 5px 0; /* Додати внутрішній відступ для кнопок */
+    margin: 5px auto; /* Автоматично центрувати кнопки по горизонталі */
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline; /* Додаємо підкреслення, щоб кнопки схожі на посилання */
+}
+
+.service-popup button:hover {
+    text-decoration: none; /* При наведенні знімаємо підкреслення */
+    color: #0056b3;
+}
+
