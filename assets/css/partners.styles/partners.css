@@ -1,0 +1,35 @@
+.partners.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.partners.container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.partner-slideshow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner-slide {
+    width: 25%; /* Кожен блок займає 25% ширини контейнера для розміщення по 4 фото в ряду */
+    box-sizing: border-box; /* Щоб врахувати падінги та бордери в обчисленні ширини */
+    padding: 10px;
+}
+
+.partner-slide img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.partner-slide p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+

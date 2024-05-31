@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 170px auto;
+    padding: 40px 60px; /* Додавання відступів по боках */
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Відступи між зображеннями */
+    justify-content: center;
+}
+
+.portfolio-item img {
+    max-width: 30%; /* Зменшення розміру зображень */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 100px 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .portfolio-item img {
+        max-width: 100%; /* Для мобільних пристроїв зображення займають всю ширину */
+        margin-bottom: 15px;
+    }
+}
