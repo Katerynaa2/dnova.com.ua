@@ -1,0 +1,23 @@
+.bottom-container {
+    bottom: 0;
+    width: 100%;
+    height: 260px; /* Висота блоку */
+    background-color: #f2f2f2; /* Колір фону для блоку */
+    text-align: center; /* Вирівнювання по центру */
+    border-top-left-radius: 50% 20%; /* Вигин зверху ліворуч */
+    border-top-right-radius: 50% 20%; /* Вигин зверху праворуч */
+    overflow: hidden; /* Приховати вміст, який виходить за межі блоку */
+}
+
+.bottom-container img {
+    width: 25x; /* Розмір логотипу */
+    margin-bottom: -20px; /* Відступ, щоб логотип знаходився в вигині */
+}
+
+.bottom-container .contact-info {
+    margin-top: 10px; /* Відступи між навігаційним меню і контактами */
+    color: #333333; /* Колір тексту контактів */
+    font-size: 14px; /* Розмір шрифту контактів */
+    font-family: 'Montserrat', sans-serif; /* Шрифт контактів */
+}
+

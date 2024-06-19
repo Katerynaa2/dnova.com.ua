@@ -3,96 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Візитка Компанії</title>
-    <link rel="stylesheet" href="assets/css/main.css/advantages.css">
+    <title>Влаштування теплових насосів</title>
     <link rel="stylesheet" href="assets/css/main.css/header.css">
-
     <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-    <link rel="stylesheet" href="assets/css/main.css/responsive.css">
-    <link rel="stylesheet" href="assets/css/main.css/slideshow.css">
     <link rel="stylesheet" href="assets/css/main.css/style.css">
-    <link rel="stylesheet" href="assets/css/main.css/directions.css">
-    <link rel="stylesheet" href="assets/css/main.css/partners.css">
     <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
-    <link rel="stylesheet" href="assets/css/service.styles/service.css">
-    <link rel="stylesheet" href="assets/css/main.css/service-popup.css">
-    
+   
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <script src="slideshow.js" defer></script>
-    <script src="services.js" defer></script>
 
     <script src="contact.js" defer></script>
 
-
 </head>
 <body>
-
-    <div class="bottom-fixed-container">
-        <div class="header">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Логотип Компанії">
-            </a>
-            <nav class="nav">
-                <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> 
-                <a class="nav__link" href="objects.html">Об'єкти</a>
-                <a class="nav__link" href="partners.html">Партнери</a>
-                <a class="nav__link" href="awards.html">Нагороди</a>
-                <a class="nav__link" href="documentation.html">Документація</a>
-                <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
-                <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
-            </nav>
+    <body>
+        <div class="bottom-fixed-container">
+            <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
         </div>
-    </div>
+            <div class="header">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Компанії">
+                </a>
+                <button class="catalog-button">
+                    <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </button>
+                <nav class="nav">
+                    <a class="nav__link" href="news.html">Новини</a>
+                    <a class="nav__link" href="perevahu.html">Переваги</a>
+                    <a class="nav__link" href="object.html">Об'єкти</a>
+                    <a class="nav__link" href="partners.html">Партнери</a>
+                    <a class="nav__link" href="awards.html">Нагороди</a>
+                    <a class="nav__link" href="documentation.html">Документація</a>
+                    <a class="nav__link" href="vacancies.html">Вакансії</a>
+                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
+                    <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
+                </nav>
+            </div>
+            
+        </div>
+        <script>
+    document.querySelector('.catalog-button').addEventListener('click', function() {
+        var menu = document.querySelector('.nav');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    });
+    </script>
+ 
 
-    <div class="header-container"style="margin-top: 170px;">
-        <body>
-            <h1>Інженерні системи</h1>
-            <p>За декілька років наполегливої роботи компанія «Денова» напрацювала репутацію експерта у сфері монтажу інженерних систем на комерційних та житлових об’єктах.</p>
-            <p>Унікальний досвід комплексного підрядника дозволяє раціонально підходити навіть до невеликої ділянки робіт з інженерії та суттєво заощадити бюджет замовника.</p>
-            <h2>Водопостачання</h2>
-            <p>Комплексні рішення з будівництва нових водопровідних мереж, ремонт та демонтаж зношених і старих.</p>
-            <h2>Каналізація</h2>
-            <p>Роботи по будівництву, монтажу та ремонту каналізаційних, дренажних систем та систем поверхневого водовідведення.</p>
-            <h2>Теплові мережі</h2>
-            <p>Будівництво теплових мереж, що забезпечують споживачів гарячою водою для систем опалення, вентиляції, гарячого водопостачання та технологічних.</p>
-            <h2>Електропостачання</h2>
-            <p>Роботи по влаштуванню мереж електропостачання: монтаж систем та мереж управління, захисту, автоматики, вимірювання та сигналізації.</p>
-            <h2>Системи вентиляції</h2>
-            <p>Складні комплексні роботи з проектування та впровадження систем вентиляції на комерційних та приватних об’єктах.</p>
-            <h2>Системи опалення</h2>
-            <p>Повний комплекс послуг від проектування систем опалення і підбору обладнання до монтажу з подальшим сервісним обслуговуванням.</p>
-            <p>Інтереси та побажання Замовника ставимо на перше місце, тому всі роботи виконуємо якісно, професійно та оперативно!</p>
-        </body>
-    </div>
-        
-  
 
 
 
-        
-
-
-
-<div class="bottom-container"style="margin-top: 30px;">
-    <img src="images/logo.png" alt="Логотип Компанії">
-    <nav class="nav">
-        <a class="nav__link" href="#news">Новини</a>
-        <a class="nav__link" href="#services">Послуги</a>
-        <a class="nav__link" href="#objects">Об'єкти</a>
-        <a class="nav__link" href="#partners">Партнери</a>
-        <a class="nav__link" href="#awards">Нагороди</a>
-        <a class="nav__link" href="#documentation">Документація</a>
-        <a class="nav__link" href="#vacancies">Вакансії</a>
-        <a class="nav__link" href="#contact">Контакти</a>
-    </nav>
-
-    <div class="contact-info">
-        <p>Контактна інформація:</p>
-        <p>Телефон: +123456789</p>
-        <p>Email: info@example.com</p>
-    </div>
-
+<div class="catalog-popup" id="catalogPopup">
+    <h2>Контакти</h2>
+    <p>
+        <strong>Ярослав Чемеринський</strong><br>
+        <em>Директор</em><br><br>
+        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+        79014 м. Львів<br>
+        вул. Мучна 23, офіс 4<br>
+        <strong>Email:</strong> office@denova.сom.ua<br>
+        <strong>Website:</strong> denovs.com.ua
+    </p>
 </div>
+    <div class="container" >
+        <header>
+            <h1>ІНЖЕНЕРНІ МЕРЕЖІ (зовнішні і внутрішні)</h1>
+        </header>
+        <section class="services">
+            <div class="service">
+                <h2>Водопостачання</h2>
+                <p>Комплексні рішення з будівництва нових водопровідних мереж, ремонт та демонтаж зношених</p>
+            </div>
+            <div class="service">
+                <h2>Каналізація</h2>
+                <p>Будівництво, монтаж та ремонт каналізаційних, дренажних систем та систем поверхневого водовідведення</p>
+            </div>
+            <div class="service">
+                <h2>Теплові мережі</h2>
+                <p>Будівництво теплових мереж, що забезпечують споживачів гарячою водою для систем опалення, вентиляції, гарячого водопостачання та технологічних потреб</p>
+            </div>
+            <div class="service">
+                <h2>Електропостачання</h2>
+                <p>Роботи по влаштуванню мереж електропостачання: монтаж систем та мереж управління, захисту, автоматики, вимірювання та сигналізації</p>
+            </div>
+            <div class="service">
+                <h2>Системи вентиляції</h2>
+                <p>Складні комплексні роботи з проєктування та впровадження систем вентиляції на комерційних та приватних об'єктах</p>
+            </div>
+            <div class="service">
+                <h2>Системи опалення</h2>
+                <p>Від проєктування систем опалення і підбору обладнання до монтажу з подальшим сервісним обслуговуванням</p>
+            </div>
+        </section>
+        <style>body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #533f2e;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+           
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            flex-grow: 1;
+        }
+        
+      
+     
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .service {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        .service h2 {
+            color: #533f2e;
+            margin-top: 0;
+        }
+        
+        .service p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+        </style>
+    </div>
 </body>
+</html>

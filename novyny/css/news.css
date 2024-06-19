@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1d2129;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for news articles */
+.news-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Individual news items */
+.news-item {
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.news-item h2 {
+    color: #adadad;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.news-item a {
+    color: hsla(46, 82%, 20%, 0.863);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+td[valign="top"] {
+    padding-left: 20px;
+}
+
+td[width="15%"] {
+    color: #adadad;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.anons p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .news-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    td[width="15%"] {
+        display: none;
+    }
+}

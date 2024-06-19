@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Візитка Компанії</title>
-    <link rel="stylesheet" href="assets/css/main.css/advantages.css">
-    <link rel="stylesheet" href="assets/css/main.css/header.css">
-
-    <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-    <link rel="stylesheet" href="assets/css/main.css/responsive.css">
-    <link rel="stylesheet" href="assets/css/main.css/slideshow.css">
-    <link rel="stylesheet" href="assets/css/main.css/style.css">
-    <link rel="stylesheet" href="assets/css/main.css/directions.css">
-    <link rel="stylesheet" href="assets/css/main.css/partners.css">
-    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
-    <link rel="stylesheet" href="assets/css/service.styles/service.css">
-    <link rel="stylesheet" href="assets/css/main.css/service-popup.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <script src="slideshow.js" defer></script>
-    <script src="services.js" defer></script>
-
-    <script src="contact.js" defer></script>
-
-
+    <title>Комплексне будівництво</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="bottom-fixed-container">
+        <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
         <div class="header">
             <a href="index.html">
                 <img src="images/logo.png" alt="Логотип Компанії">
             </a>
+            <button class="catalog-button">
+                <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </button>
             <nav class="nav">
                 <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> 
-                <a class="nav__link" href="objects.html">Об'єкти</a>
+                <a class="nav__link" href="perevahu.html">Переваги</a>
+                <a class="nav__link" href="object.html">Об'єкти</a>
                 <a class="nav__link" href="partners.html">Партнери</a>
                 <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
@@ -44,111 +31,123 @@
                 <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
             </nav>
         </div>
+        
     </div>
+    <script>
+document.querySelector('.catalog-button').addEventListener('click', function() {
+    var menu = document.querySelector('.nav');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});
+</script>
 
-    <div class="header-container"style="margin-top: 170px;">
-        <h2>Комплексне будівництво</h2>
-        <p>Компанія Денова» зарекомендувала себе як стабільна та динамічна організація, яка виконує всі види будівельних та монтажних робіт.</p>
-        <p>Ми реалізовуємо проект в цілому, починаючи від розробки концепції, виконуючи проектні та будівельні роботи, та закінчуючи здачею об’єкту в експлуатацію.</p>
-        <p>Ми виконуємо повний цикл послуг, а саме:</p>
-        <ul>
-            <li>комплексне проектування об’єктів I-V категорій складності різноманітного призначення на всіх стадіях;</li>
-            <li>паспортизація будівель та споруд, інженерних систем;</li>
-            <li>функції генерального підрядника у будівництві;</li>
-            <li>енергоаудит існуючих об'єктів та рекомендації щодо енергозбереження;</li>
-            <li>дослідження параметрів існуючих інженерних систем (опалення, вентиляція, водопостачання, каналізація, теплопостачання);</li>
-            <li>впровадження альтернативних джерел енергії (біопаливо, біогазові електростанції тощо);</li>
-            <li>авторський нагляд за будівництвом об'єктів;</li>
-            <li>монтаж інженерних комунікацій і мереж.</li>
-        </ul>
-    </div>
-
-    <style>
-      .header-container {
-            margin-top: 170px;
+    <div class="container">
+        <header>
+            <h1>КОМПЛЕКСНЕ БУДІВНИЦТВО</h1>
+        </header>
+        <section class="services">
+            <div class="service">
+                <div class="circle"></div>
+                <h2>Виконуємо роботи «під ключ»</h2>
+            </div>
+            <div class="service">
+                <div class="circle"></div>
+                <h2>Функції генерального підрядника у будівництві</h2>
+            </div>
+            <div class="service">
+                <div class="circle"></div>
+                <h2>Будівельні роботи: земельні роботи і спорудження, конструктивні зміни, капітальний і поточний ремонт, реставраційні роботи</h2>
+            </div>
+            <div class="service">
+                <div class="circle"></div>
+                <h2>Паспортизація будівель та споруд</h2>
+            </div>
+            <div class="service">
+                <div class="circle"></div>
+                <h2>Авторський нагляд за будівництвом об'єктів</h2>
+            </div>
+        </section>
+        <style>body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #4d4d4d;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            color: #f5f5f5;
+        }
+        
+        header {
+            text-align: left;
+            background-color: #533f2e;
+            color: white;
+            padding: 20px 10px;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .services {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding-left: 40px;
             position: relative;
         }
-
-        .header-container h2 {
-            font-size: 32px;
-            color: #ffd700;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 10px;
-        }
-
-        .header-container p {
-            font-size: 18px;
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-
-        .header-container ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            color: #ffd700;
-            font-size: 18px;
-        }
-
-        .header-container ul li {
-            margin-bottom: 5px;
-        }
-
-        .rectangle {
-            position: absolute;
-            width: 80px;
-            height: 40px;
-            background-color: #ffd700;
-            transform: rotate(45deg);
-            top: -20px;
-            left: 50%;
-            margin-left: -40px;
-            z-index: -1;
-        }
-
-        .triangle {
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-bottom: 40px solid #4d4d4d;
-            top: -40px;
-            left: 50%;
-            margin-left: -20px;
-            z-index: -1;
-        }
-    </style>
-
-
-
         
-
-
-
-<div class="bottom-container"style="margin-top: 30px;">
-    <img src="images/logo.png" alt="Логотип Компанії">
-    <nav class="nav">
-        <a class="nav__link" href="#news">Новини</a>
-        <a class="nav__link" href="#services">Послуги</a>
-        <a class="nav__link" href="#objects">Об'єкти</a>
-        <a class="nav__link" href="#partners">Партнери</a>
-        <a class="nav__link" href="#awards">Нагороди</a>
-        <a class="nav__link" href="#documentation">Документація</a>
-        <a class="nav__link" href="#vacancies">Вакансії</a>
-        <a class="nav__link" href="#contact">Контакти</a>
-    </nav>
-
-    <div class="contact-info">
-        <p>Контактна інформація:</p>
-        <p>Телефон: +123456789</p>
-        <p>Email: info@example.com</p>
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .service h2 {
+            color: #533f2e;
+            font-size: 1rem;
+            margin: 0;
+            padding-left: 10px;
+        }
+        
+        .circle {
+            width: 15px;
+            height: 15px;
+            background-color: #d0a85c;
+            border-radius: 50%;
+            position: absolute;
+            left: -25px;
+        }
+        
+        .service:nth-child(odd)::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #e0e0e0;
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            z-index: -1;
+        }
+        
+        .service:nth-child(even)::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #e0e0e0;
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            z-index: -1;
+        }
+        </style>
     </div>
-
-</div>
 </body>
+</html>

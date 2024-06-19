@@ -1,10 +1,10 @@
 .slide-show {
-    width: 1300px; 
-    height: 480px;
+    width: 1100px; 
+    height: 400px;
     overflow: hidden;
     border: 5px solid hsl(40, 20%, 94%);
     position: absolute;
-    margin-top: 0px;
+    margin-top: 25px;
 }
 
 .mid {
@@ -83,15 +83,102 @@ input[name="btn"] {
 #btn5:checked ~ .slide.slide5 {
     margin-left: -60%;
 }
+/* Адаптивні стилі для телефонів */
+/* Адаптивні стилі для телефонів */
+@media (max-width: 768px) {
+    .slide-show {
+        width: 100%;
+        height: 200px;
+        margin-top: 25px; /* Збільшуємо відстань від верху */
+        border: 3px solid hsl(40, 20%, 94%);
+        position: relative; /* Змінюємо позицію на relative */
+    }
 
+    .mid {
+        top: 50%;
+    }
 
+    .navigation {
+        bottom: 5px;
+    }
 
+    .nav2 {
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+    }
 
+    .slides {
+        width: 500%;
+        height: 100%;
+        display: flex;
+    }
 
+    .slide {
+        width: 20%;
+    }
 
+    .slide img {
+        height: 100%;
+    }
+}
 
+/* Додаткові стилі для дуже малих екранів */
+@media (max-width: 480px) {
+    .slide-show {
+        height: 120px; /* Reduced height */
+        width: 80%;    /* Reduced width to 80% of the viewport */
+        margin: 0 auto; /* Center the slideshow on small screens */
+        margin-top: 15px; /* Reduced top margin for less spacing */
+        border: 2px solid hsl(40, 20%, 94%); /* Slightly thinner border */
+    }
 
+    .navigation {
+        bottom: 3px;
+    }
 
+    .nav2 {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+    }
+}
 
+/* Додаткові стилі для екрану з максимальною шириною 360px */
+@media (max-width: 360px) {
+    .slide-show {
+        height: 100px; /* Further reduced height */
+        width: 90%;    /* Slightly larger width for very small screens */
+        margin: 0 auto; /* Center the slideshow */
+        margin-top: 10px; /* Further reduced top margin */
+        border: 1px solid hsl(40, 20%, 94%); /* Even thinner border */
+    }
 
+    .navigation {
+        bottom: 2px;
+    }
 
+    .nav2 {
+        width: 8px;
+        height: 8px;
+        margin: 2px;
+    }
+
+    .mid {
+        top: 50%;
+    }
+
+    .slides {
+        width: 500%;
+        height: 100%;
+        display: flex;
+    }
+
+    .slide {
+        width: 20%;
+    }
+
+    .slide img {
+        height: 100%;
+    }
+}

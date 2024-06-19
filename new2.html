@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини</title>
-    <link rel="stylesheet" href="assets/css/main.css/advantages.css">
-    <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-    <link rel="stylesheet" href="assets/css/main.css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css/responsive.css">
-    <link rel="stylesheet" href="assets/css/main.css/slideshow.css">
-    <link rel="stylesheet" href="assets/css/main.css/style.css">
-    <link rel="stylesheet" href="assets/css/main.css/directions.css">
-    <link rel="stylesheet" href="assets/css/main.css/partners.css">
-    <link rel="stylesheet" href="assets/css/news.styles/news.css">
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Нововолинська «Родинна ковбаска»</title>
+        <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
+        <link rel="stylesheet" href="assets/css/main.css/header.css">
+        <link rel="stylesheet" href="assets/css/news.styles/newsstyle.css">
+        <link rel="stylesheet" href="assets/css/news.styles/novyny.css">
+        <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+        <script src="contact.js" defer></script>
 </head>
 <body>
 
 
 <body>
     <div class="bottom-fixed-container">
+        <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
         <div class="header">
-            <img src="images/logo.png" alt="Логотип Компанії">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Компанії">
+            </a>
+            <button class="catalog-button">
+                <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </button>
             <nav class="nav">
                 <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> <!-- Додано ID -->
-                <a class="nav__link" href="objects.html">Об'єкти</a>
-                <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
+                <a class="nav__link" href="perevahu.html">Переваги</a>
+
+                <a class="nav__link" href="object.html">Об'єкти</a>
+                <a class="nav__link" href="partners.html">Партнери</a>
                 <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
                 <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
+                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                 <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
             </nav>
         </div>
+        
     </div>
+    <script>
+document.querySelector('.catalog-button').addEventListener('click', function() {
+    var menu = document.querySelector('.nav');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});
+</script>
 
-    <div class="news-container"style="margin-top: 170px;">
+
+<div class="catalog-popup" id="catalogPopup">
+    <h2>Контакти</h2>
+    <p>
+        <strong>Ярослав Чемеринський</strong><br>
+        <em>Директор</em><br><br>
+        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+        79014 м. Львів<br>
+        вул. Мучна 23, офіс 4<br>
+        <strong>Email:</strong> office@denova.сom.ua<br>
+        <strong>Website:</strong> denovs.com.ua
+    </p>
+</div>
+
+    <div class="news-container"style="margin-top: 5px;">
         <h1>Новини</h1>
 <div class="news-item">
     <h2>13 грудня 2017</h2>
-    <p><a href="110-vlashtuvannia-pidpidlohovykh-merezh-v-zhk-u-lvovi.html">Влаштування підпідлогових мереж в ЖК у Львові</a></p>
+    <p><a href="novyny/110-vlashtuvannia-pidpidlohovykh-merezh-v-zhk-u-lvovi.html">Влаштування підпідлогових мереж в ЖК у Львові</a></p>
 </div>
 <div class="news-item">
     <h2>20 листопада 2017</h2>
-    <p><a href="109-zavershuiutsia-remontni-roboty-na-shveinomu-vyrobnytstvi-u-lvovi.html">Завершуються ремонтні роботи на швейному виробництві у Львові</a></p>
+    <p><a href="novyny/109-zavershuiutsia-remontni-roboty-na-shveinomu-vyrobnytstvi-u-lvovi.html">Завершуються ремонтні роботи на швейному виробництві у Львові</a></p>
 </div>
 <div class="news-item">
     <h2>17 листопада 2017</h2>
-    <p><a href="108-budivelno-remontni-roboty-v-khirurhichnomu-viddilenni-lvivskoi-oblasnoi-klinichnoi-likarni.html">Завершення ремонтних робіт в хірургічному відділенні Львівської обласної клінічної лікарні</a></p>
+    <p><a href="novyny/108-budivelno-remontni-roboty-v-khirurhichnomu-viddilenni-lvivskoi-oblasnoi-klinichnoi-likarni.html">Завершення ремонтних робіт в хірургічному відділенні Львівської обласної клінічної лікарні</a></p>
 </div>
 <div class="news-item">
     <h2>09 жовтня 2017</h2>
-    <p><a href="107-vlashtuvannia-inzhenernykh-merezh-na-sto-v-chervonohradi.html">Влаштування інженерних мереж на СТО в Червонограді</a></p>
+    <p><a href="novyny/107-vlashtuvannia-inzhenernykh-merezh-na-sto-v-chervonohradi.html">Влаштування інженерних мереж на СТО в Червонограді</a></p>
 </div>
 <div class="news-item">
     <h2>03 жовтня 2017</h2>
-    <p><a href="106-remontno-vidnovliuvalni-roboty-prymishchennia-pid-shveine-vyrobnytstvo-u-lvovi.html">Ремонтно-відновлювальні роботи приміщення під швейне виробництво у Львові</a></p>
+    <p><a href="novyny/106-remontno-vidnovliuvalni-roboty-prymishchennia-pid-shveine-vyrobnytstvo-u-lvovi.html">Ремонтно-відновлювальні роботи приміщення під швейне виробництво у Львові</a></p>
 </div>
 <div class="news-item">
     <h2>31 серпня 2017</h2>
-    <p><a href="105-khid-robit-u-lvivskii-oblasnii-klinichnii-likarni.html">Хід робіт у Львівській обласній клінічній лікарні</a></p>
+    <p><a href="novyny/105-khid-robit-u-lvivskii-oblasnii-klinichnii-likarni.html">Хід робіт у Львівській обласній клінічній лікарні</a></p>
 </div>
 <div class="news-item">
     <h2>14 серпня 2017</h2>
-    <p><a href="104-poizdka-na-zavod-polimeriv-rehau.html">Поїздка на завод полімерів «Rehau»</a></p>
+    <p><a href="novyny/104-poizdka-na-zavod-polimeriv-rehau.html">Поїздка на завод полімерів «Rehau»</a></p>
 </div>
 <div class="news-item">
     <h2>31 липня 2017</h2>
-    <p><a href="102-vlashtuvannia-inzhenernykh-merezh-u-zhytlovomu-kompleksi-na-vul-lemkivskii-u-lvovi.html">Влаштування інженерних мереж у житловому комплексі на вул.Лемківській у Львові</a></p>
+    <p><a href="novyny/102-vlashtuvannia-inzhenernykh-merezh-u-zhytlovomu-kompleksi-na-vul-lemkivskii-u-lvovi.html">Влаштування інженерних мереж у житловому комплексі на вул.Лемківській у Львові</a></p>
 </div>
 <div class="news-item">
     <h2>25 липня 2017</h2>
-    <p><a href="101-vlashtuvannia-inzhenernykh-merezh-na-fabrytsi-bader-ukraina-v-m-horodok-lvivskoi-oblasti.html">Влаштування інженерних мереж на фабриці «Бадер Україна» в м. Городок Львівської області</a></p>
+    <p><a href="novyny/101-vlashtuvannia-inzhenernykh-merezh-na-fabrytsi-bader-ukraina-v-m-horodok-lvivskoi-oblasti.html">Влаштування інженерних мереж на фабриці «Бадер Україна» в м. Городок Львівської області</a></p>
 </div>
 <div class="news-item">
     <h2>13 липня 2017</h2>
-    <p><a href="91-khid-budivnytstva-zhytlovoho-budynku-z119-u-lvovi.html">Хід будівництва житлового будинку «Z119» у Львові</a></p>
+    <p><a href="novyny/91-khid-budivnytstva-zhytlovoho-budynku-z119-u-lvovi.html">Хід будівництва житлового будинку «Z119» у Львові</a></p>
 </div>
     </div>
 

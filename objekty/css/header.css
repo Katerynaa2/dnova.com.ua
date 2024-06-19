@@ -1,0 +1,75 @@
+.bottom-fixed-container {
+    position: fixed; /* Робить блок фіксованим */
+    top: 0; /* Розміщує блок вгорі вікна браузера */
+    width: 1200px; /* Устанавлює ширину контейнера на 100% ширини батьківського елемента */
+    max-width: 70px; /* Устанавлює максимальну ширину контейнера на 100% ширини батьківського елемента */
+    margin: 0 auto; /* Автоматичні відступи слід із лівого і правого країв (центрування) */
+    /*background-color: #f0f0f0; /* Встановлює колір фону контейнера */
+    height: 120px;
+    z-index: 1000;
+}
+
+.header h1 {
+    position: fixed;
+    top: 0;
+    left: 90px; /* Задає відступ зліва */
+    margin-top: 62px; /* Задає відступ зверху */
+    color: #333; /* Колір тексту */
+    font-size: 11px; /* Розмір шрифту */
+    font-family: 'Montserrat', sans-serif; /* Шрифт */
+}
+
+.header img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 335px; /* Ширина логотипу */
+    height: auto; /* Автоматично обчислює висоту, щоб зберегти співвідношення сторін */
+}
+
+.header {
+    padding-top: 80px; /* Встановлює внутрішні відступи зверху */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    background-image: url("C:\Users\Admin\Downloads\msg5277396980-40723.jpg"); /* Шлях до зображення */
+}
+
+.nav {
+    font-size: 14px; /* Розмір навігації */
+    text-transform: uppercase; /* Верхній регістр */
+    text-align: center; /* Розміщений по центру */
+    margin-top: 15px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #e7f3eb;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: hwb(34 15% 19%);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: hsl(30, 100%, 100%); /* Коли наводите букви, змінюється колір */
+}
+
+.nav__link:hover:after {
+    opacity: 1; /* Встановлює прозорість псевдоелементу на 1 при наведенні курсора на елемент з класом .nav__link */
+}

@@ -1,82 +1,114 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини</title>
-    <link rel="stylesheet" href="assets/css/main.css/advantages.css">
-    <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-    <link rel="stylesheet" href="assets/css/main.css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css/responsive.css">
-    <link rel="stylesheet" href="assets/css/main.css/slideshow.css">
-    <link rel="stylesheet" href="assets/css/main.css/style.css">
-    <link rel="stylesheet" href="assets/css/main.css/directions.css">
-    <link rel="stylesheet" href="assets/css/main.css/partners.css">
-    <link rel="stylesheet" href="assets/css/news.styles/news.css">
-
-
-
-
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Нововолинська «Родинна ковбаска»</title>
+        <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
+        <link rel="stylesheet" href="assets/css/main.css/header.css">
+        <link rel="stylesheet" href="assets/css/news.styles/newsstyle.css">
+        <link rel="stylesheet" href="assets/css/news.styles/novyny.css">
+        <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+        <script src="contact.js" defer></script>
 </head>
 <body>
 
 
-<body>
-    <div class="bottom-fixed-container">
-        <div class="header">
-            <img src="images/logo.png" alt="Логотип Компанії">
-            <nav class="nav">
-                <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> <!-- Додано ID -->
-                <a class="nav__link" href="objects.html">Об'єкти</a>
-                <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
-                <a class="nav__link" href="awards.html">Нагороди</a>
-                <a class="nav__link" href="documentation.html">Документація</a>
-                <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
-                <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
-            </nav>
+    <body>
+        <div class="bottom-fixed-container">
+            <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
         </div>
-    </div>
+            <div class="header">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Компанії">
+                </a>
+                <button class="catalog-button">
+                    <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </button>
+                <nav class="nav">
+                    <a class="nav__link" href="news.html">Новини</a>
+                    <a class="nav__link" href="perevahu.html">Переваги</a>
+    
+                    <a class="nav__link" href="object.html">Об'єкти</a>
+                    <a class="nav__link" href="partners.html">Партнери</a>
+                    <a class="nav__link" href="awards.html">Нагороди</a>
+                    <a class="nav__link" href="documentation.html">Документація</a>
+                    <a class="nav__link" href="vacancies.html">Вакансії</a>
+                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
+                    <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
+                </nav>
+            </div>
+            
+        </div>
+        <script>
+    document.querySelector('.catalog-button').addEventListener('click', function() {
+        var menu = document.querySelector('.nav');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    });
+    </script>
+    
+ 
 
-    <div class="news-container"style="margin-top: 170px;">
+
+<div class="catalog-popup" id="catalogPopup">
+    <h2>Контакти</h2>
+    <p>
+        <strong>Ярослав Чемеринський</strong><br>
+        <em>Директор</em><br><br>
+        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+        79014 м. Львів<br>
+        вул. Мучна 23, офіс 4<br>
+        <strong>Email:</strong> office@denova.сom.ua<br>
+        <strong>Website:</strong> denovs.com.ua
+    </p>
+</div>
+
+    <div class="news-container"style="margin-top: 5px;">
         <h1>Новини</h1>
         <div class="news-item">
             <h2>30 травня 2017</h2>
-            <p><a href="90-zaversheno-remont-prymishchennia-mahazynu-brendovoi-mobilnoi-tekhniky-u-lvovi.html">Завершено ремонт приміщення магазину брендової мобільної техніки у Львові</a></p>
+            <p><a href="novyny/90-zaversheno-remont-prymishchennia-mahazynu-brendovoi-mobilnoi-tekhniky-u-lvovi.html">Завершено ремонт приміщення магазину брендової мобільної техніки у Львові</a></p>
         </div>
         <div class="news-item">
             <h2>19 травня 2017</h2>
-            <p><a href="89-vlashtuvannia-inzhenernykh-merezh-v-bahatokvartyrnomu-zhytlovomu-budynku-u-lvovi.html">Влаштування інженерних мереж в багатоквартирному житловому будинку у Львові</a></p>
+            <p><a href="novyny/89-vlashtuvannia-inzhenernykh-merezh-v-bahatokvartyrnomu-zhytlovomu-budynku-u-lvovi.html">Влаштування інженерних мереж в багатоквартирному житловому будинку у Львові</a></p>
         </div>
         <div class="news-item">
             <h2>21 березня 2017</h2>
-            <p><a href="88-khid-robit-po-montazhu-merezh-kanalizatsii-zhytlovoho-kompleksu-na-vul-pid-dubom-u-lvovi.html">Хід робіт по монтажу мереж каналізації житлового комплексу на вул. Під Дубом у Львові</a></p>
+            <p><a href="novyny/88-khid-robit-po-montazhu-merezh-kanalizatsii-zhytlovoho-kompleksu-na-vul-pid-dubom-u-lvovi.html">Хід робіт по монтажу мереж каналізації житлового комплексу на вул. Під Дубом у Львові</a></p>
         </div>
         <div class="news-item">
             <h2>02 лютого 2017</h2>
-            <p><a href="87-novyi-rekord-ponad-1000-ukrainskykh-domohospodarstv-zarobliaiut-na-vlasnykh-soniachnykh-elektrostantsiiakh.html">Новий рекорд - понад 1000 українських домогосподарств заробляють на власних сонячних електростанціях</a></p>
+            <p><a href="novyny/87-novyi-rekord-ponad-1000-ukrainskykh-domohospodarstv-zarobliaiut-na-vlasnykh-soniachnykh-elektrostantsiiakh.html">Новий рекорд - понад 1000 українських домогосподарств заробляють на власних сонячних електростанціях</a></p>
         </div>
         <div class="news-item">
             <h2>23 січня 2017</h2>
-            <p><a href="86-kompaniia-denova-realno-mozhe-optymizuvaty-vashi-vytraty-na-teplovu-enerhiiu.html">Компанія Денова реально може оптимізувати ваші витрати на теплову енергію</a></p>
+            <p><a href="novyny/86-kompaniia-denova-realno-mozhe-optymizuvaty-vashi-vytraty-na-teplovu-enerhiiu.html">Компанія Денова реально може оптимізувати ваші витрати на теплову енергію</a></p>
         </div>
         <div class="news-item">
             <h2>23 листопада 2016</h2>
-            <p><a href="85-zhytlovyi-budynok-na-vul-na-nyvakh-u-lvovi-zdano-v-ekspluatatsiiu.html">Житловий будинок на вул. На Нивах у Львові здано в експлуатацію</a></p>
+            <p><a href="novyny/85-zhytlovyi-budynok-na-vul-na-nyvakh-u-lvovi-zdano-v-ekspluatatsiiu.html">Житловий будинок на вул. На Нивах у Львові здано в експлуатацію</a></p>
         </div>
         <div class="news-item">
             <h2>21 листопада 2016</h2>
-            <p><a href="84-khid-robit-na-ob-iekti-v-m-chervonohrad.html">Хід робіт на об'єкті в м. Червоноград</a></p>
+            <p><a href="novyny/84-khid-robit-na-ob-iekti-v-m-chervonohrad.html">Хід робіт на об'єкті в м. Червоноград</a></p>
         </div>
         <div class="news-item">
             <h2>18 листопада 2016</h2>
-            <p><a href="83-remontno-budivelni-roboty-v-ofisi-lvivhazu-zavershuiutsia.html">Ремонтно-будівельні роботи в офісі Львівгазу завершуються</a></p>
+            <p><a href="novyny/83-remontno-budivelni-roboty-v-ofisi-lvivhazu-zavershuiutsia.html">Ремонтно-будівельні роботи в офісі Львівгазу завершуються</a></p>
         </div>
         <div class="news-item">
             <h2>29 вересня 2016</h2>
-            <p><a href="82-osinniy-budivelnyy-forum-u-lvovi.html">Осінній будівельний форум у Львові</a></p>
+            <p><a href="novyny/82-osinniy-budivelnyy-forum-u-lvovi.html">Осінній будівельний форум у Львові</a></p>
         </div>
         
 

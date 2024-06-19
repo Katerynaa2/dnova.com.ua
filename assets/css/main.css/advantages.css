@@ -1,27 +1,20 @@
-
-/* Стилі для блоку з напрямками */
-.advantages{
+.advantages {
     display: flex;
-    flex-direction: row; /* Змінено напрямок розташування елементів на горизонтальний */
-    align-items: center; /* Центруємо елементи по вертикалі */
-    justify-content: center; /* Центруємо елементи по горизонталі */
-    margin-top: 390px; /* Змінений верхній відступ для центрування */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Зменшено верхній відступ */
 }
 
-/* Стилі для фотографії в блоку з напрямками */
 .photo {
-    width: 120px; /* Збільшена ширина фото */
-    height: 120px; /* Збільшена висота фото */
-    border-radius: 50%; /* Закруглення країв фото */
-    margin-right: 20px; /* Доданий відступ між фото та текстом */
+    width: 200px; /* Збільшена ширина фото */
+    height: auto; /* Автоматична висота фото */
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-
-
-/* Стилі для тексту напрямків */
-.advantage p {
-    font-family: 'Roboto', sans-serif; /* Шрифт */
-    font-size: 18px; /* Збільшений розмір шрифту */
-    color: #333; /* Колір тексту */
-    margin: 8px 0; /* Збільшені відступи між абзацами */
+.advantage {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0;
 }

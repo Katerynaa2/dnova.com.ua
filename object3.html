@@ -8,38 +8,80 @@
     <link rel="stylesheet" href="assets/css/main.css/bottom-container.css"> 
     <link rel="stylesheet" href="assets/css/main.css/header.css"> 
     <link rel="stylesheet" href="object3.html"> 
+    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <script src="contact.js" defer></script>
+
 </head>
     
     <body>
         <div class="bottom-fixed-container">
+            <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+        </div>
             <div class="header">
-                <img src="images/logo.png" alt="Логотип Компанії">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Компанії">
+                </a>
+                <button class="catalog-button">
+                    <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </button>
                 <nav class="nav">
                     <a class="nav__link" href="news.html">Новини</a>
-                    <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> 
-                    <a class="nav__link" href="objects.html">Об'єкти</a>
-                    <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
+                    <a class="nav__link" href="perevahu.html">Переваги</a>
+                    <a class="nav__link" href="object.html">Об'єкти</a>
+                    <a class="nav__link" href="partners.html">Партнери</a>
                     <a class="nav__link" href="awards.html">Нагороди</a>
                     <a class="nav__link" href="documentation.html">Документація</a>
                     <a class="nav__link" href="vacancies.html">Вакансії</a>
-                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
+                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                     <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
                 </nav>
             </div>
+            
         </div>
+        <script>
+    document.querySelector('.catalog-button').addEventListener('click', function() {
+        var menu = document.querySelector('.nav');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    });
+    </script>
+     
+    
+    
+    <div class="catalog-popup" id="catalogPopup">
+        <h2>Контакти</h2>
+        <p>
+            <strong>Ярослав Чемеринський</strong><br>
+            <em>Директор</em><br><br>
+            <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+            <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+            <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+            79014 м. Львів<br>
+            вул. Мучна 23, офіс 4<br>
+            <strong>Email:</strong> office@denova.сom.ua<br>
+            <strong>Website:</strong> denovs.com.ua
+        </p>
+    </div>
     
     
     <div class="portfolio-item"style="margin-top: 170px;">
-        <a href="22-mahazyn-silpo-po-vul-ak-pavlova-44b-saltovskomu-shose-43-v-m-kharkovi.html">
-        <img src="images/object/object3html/1com.ua__srcdeef915a86fb6710b6f4a08c94b251ac_par2989039fb8e3f9cad95929782c202d6e_dat1434352216.jpeg" alt="Image 1"></a>
+        <a href="objekty/22-mahazyn-silpo-po-vul-ak-pavlova-44b-saltovskomu-shose-43-v-m-kharkovi.html">
+        <img src="objekty/images/object/object3html.photo/1(2).jpeg" alt="Image 1"></a>
         <div class="description">
             <h2>Магазин «Сільпо» по вул. ак. Павлова, 44б (Салтовському шосе, 43) в м. Харкові</h2>
         </div>
     </div>
     
     <div class="portfolio-item">
-        <a href="21-mahazyn-silpo-po-vul-starokostiantynivske-shose-6-v-m-khmelnytsku.html">
-        <img src="images/object/object3html/2.jpeg" alt="Image 2"></a>
+        <a href="objekty/21-mahazyn-silpo-po-vul-starokostiantynivske-shose-6-v-m-khmelnytsku.html">
+        <img src="objekty/images/object/object3html.photo/1(2).jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Магазин «Сільпо» по вул. Старокостянтинівське шосе, 6 в м. Хмельницьку
             </h2>
@@ -47,16 +89,16 @@
     </div>
     
     <div class="portfolio-item">
-        <a href="20-konkursnyi-proekt-sportyvno-ozdorovchoi-bazy-nbu.html">
-        <img src="images/object/object3html/3.jpeg" alt="Image 2"></a>
+        <a href="objekty/20-konkursnyi-proekt-sportyvno-ozdorovchoi-bazy-nbu.html">
+        <img src="objekty/images/object/object3html.photo/3.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Проект спортивно-оздоровчої бази НБУ в Житомирській області</h2>
         </div>
     </div>
     
     <div class="portfolio-item">
-        <a href="19-proekt-rekonstruktsii-univermahu-prykarpattia-v-ivano-frankivsku.html">
-        <img src="images/object/object3html/4.jpeg" alt="Image 2"></a>
+        <a href="objekty/19-proekt-rekonstruktsii-univermahu-prykarpattia-v-ivano-frankivsku.html">
+        <img src="objekty/images/object/object3html.photo/4.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Проект реконструкції підвальних приміщень універмагу «Прикарпаття» під торгові приміщення, з добудовою вхідної групи на вул. Дністровській, 3 у м. Івано-Франківську</h2>
         </div>
@@ -72,8 +114,8 @@
      
    
     <script>
-        var currentPage = 3; // Починаємо з другої сторінки, оскільки news.html - перша
-        var totalPages = 4; // Вказати загальну кількість сторінок
+        var currentPage = 3; 
+        var totalPages = 4; 
     
         function showNext() {
             if (currentPage < totalPages) {

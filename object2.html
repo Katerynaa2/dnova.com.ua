@@ -7,31 +7,74 @@
     <link rel="stylesheet" href="assets/css/objects.styles/objects.css"> 
     <link rel="stylesheet" href="assets/css/main.css/bottom-container.css"> 
     <link rel="stylesheet" href="assets/css/main.css/header.css"> 
-    <link rel="stylesheet" href="object.html"> 
+    <link rel="stylesheet" href="object.html">
+    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <script src="contact.js" defer></script>
+ 
 </head>
     
     <body>
         <div class="bottom-fixed-container">
+            <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+        </div>
             <div class="header">
-                <img src="images/logo.png" alt="Логотип Компанії">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Компанії">
+                </a>
+                <button class="catalog-button">
+                    <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </button>
                 <nav class="nav">
                     <a class="nav__link" href="news.html">Новини</a>
-                    <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> 
-                    <a class="nav__link" href="objects.html">Об'єкти</a>
-                    <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
+                    <a class="nav__link" href="perevahu.html">Переваги</a>
+                    <a class="nav__link" href="object.html">Об'єкти</a>
+                    <a class="nav__link" href="partners.html">Партнери</a>
                     <a class="nav__link" href="awards.html">Нагороди</a>
                     <a class="nav__link" href="documentation.html">Документація</a>
                     <a class="nav__link" href="vacancies.html">Вакансії</a>
-                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
+                    <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                     <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
                 </nav>
             </div>
+            
         </div>
+        <script>
+    document.querySelector('.catalog-button').addEventListener('click', function() {
+        var menu = document.querySelector('.nav');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    });
+    </script>
+    
+    
+    <div class="catalog-popup" id="catalogPopup">
+        <h2>Контакти</h2>
+        <p>
+            <strong>Ярослав Чемеринський</strong><br>
+            <em>Директор</em><br><br>
+            <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+            <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+            <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+            79014 м. Львів<br>
+            вул. Мучна 23, офіс 4<br>
+            <strong>Email:</strong> office@denova.сom.ua<br>
+            <strong>Website:</strong> denovs.com.ua
+        </p>
+    </div>
     
     
     <div class="portfolio-item"style="margin-top: 170px;">
         <a href="76-remont-nasosnoi-stantsii-v-zhytlovomu-budynku-po-vul-bortnianskoho-lviv.html">
-        <img src="images/object/object2html/1.jpeg" alt="Image 1"></a>
+        <img src="objekty/images/object/object2html.photo/phpThumb_cache_denova.com.ua__src6ac10edf601a714c149e6415a189d84a_par2989039fb8e3f9cad95929782c202d6e_dat1496127401.jpeg" alt="Image 1"></a>
         <div class="description">
             <h2>
                 Ремонт насосної станції в житловому будинку по вул. Бортнянського, Львів
@@ -40,8 +83,8 @@
     </div>
     
     <div class="portfolio-item">
-        <a href="74-roboty-po-vlashtuvanniu-ofisnykh-ta-skladskykh-prymishchen-duty-free-aeroport-im-d-halytskoho-lviv.html">
-        <img src="images/object/object2html/2.jpeg" alt="Image 2"></a>
+        <a href="objekty/74-roboty-po-vlashtuvanniu-ofisnykh-ta-skladskykh-prymishchen-duty-free-aeroport-im-d-halytskoho-lviv.html">
+        <img src="objekty/images/object/object2html.photo/2.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Роботи по влаштуванню офісних та складських приміщень Duty free, аеропорт ім. Д. Галицького, Львів
             </h2>
@@ -49,31 +92,31 @@
     </div>
     
     <div class="portfolio-item">
-        <a href="73-roboty-po-vlashtuvanniu-vnutrishnikh-merezh-opalennia-vodopostachannia-kanalizatsii-ta-zovnishnikh-merezh-vodopostachannia-i-kanalizatsii-na-vul-na-nyvakh-v-m-lvovi.html">
-        <img src="images/object/object2html/3.jpeg" alt="Image 2"></a>
+        <a href="objekty/73-roboty-po-vlashtuvanniu-vnutrishnikh-merezh-opalennia-vodopostachannia-kanalizatsii-ta-zovnishnikh-merezh-vodopostachannia-i-kanalizatsii-na-vul-na-nyvakh-v-m-lvovi.html">
+        <img src="objekty/images/object/object2html.photo/3.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Роботи по влаштуванню внутрішніх мереж опалення, водопостачання, каналізації та зовнішніх мереж водопостачання і каналізації на вул. На Нивах в м. Львові</h2>
         </div>
     </div>
     
     <div class="portfolio-item">
-        <a href="57-zovnishni-inzhenerni-merezhi-v-hotelno-restorannomu-kompleksi-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
-            <img src="images/object/object2html/4.jpeg" alt="Image 2"></a>
+        <a href="objekty/57-zovnishni-inzhenerni-merezhi-v-hotelno-restorannomu-kompleksi-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
+            <img src="objekty/images/object/object2html.photo/4.jpeg" alt="Image 2"></a>
             <div class="description">
             <h2>Зовнішні інженерні мережі в готельно – ресторанному комплексі з адміністративними приміщеннями та автостоянкою м. Червоноград</h2>
         </div>
     </div>
     
     <div class="portfolio-item">
-        <a href="48-kotedzhna-zabudova-v-m-lvovi-po-vul-barvinskykh.html">
-            <img src="images/object/object2html/5.jpeg" alt="Image 2"></a>
+        <a href="objekty/48-kotedzhna-zabudova-v-m-lvovi-po-vul-barvinskykh.html">
+            <img src="objekty/images/object/object2html.photo/5.jpeg" alt="Image 2"></a>
             <div class="description">
             <h2> Котеджна забудова в м. Львові по вул. Барвінських</h2>
         </div>
     </div> 
     <div class="portfolio-item">
-        <a href="32-vlashtuvannia-pryplyvno-vytiazhnoi-ventyliatsii-v-pidvalnykh-prymishchenniakh-bloku-b-hurtozhytku-2-lvivskoho-instytut-bankivskoi-spravy-universytetu-bankivskoi-spravy-natsionalnoho-banku-ukrainy-u-m-lvovi-po-vul-zhovkivskii-53.html">
-        <img src="images/object/object2html/6(!).jpeg" alt="Image 2"></a>
+        <a href="objekty/32-vlashtuvannia-pryplyvno-vytiazhnoi-ventyliatsii-v-pidvalnykh-prymishchenniakh-bloku-b-hurtozhytku-2-lvivskoho-instytut-bankivskoi-spravy-universytetu-bankivskoi-spravy-natsionalnoho-banku-ukrainy-u-m-lvovi-po-vul-zhovkivskii-53.html">
+        <img src="objekty/images/object/object2html.photo/6.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Влаштування припливно-витяжної вентиляції в підвальних приміщеннях блоку «Б» гуртожитку №2 Львівського інститут банківської справи Університету банківської справи Національного банку України у м. Львові по вул. Жовківській, 53    </h2>
         </div>
@@ -81,16 +124,16 @@
     
      
     <div class="portfolio-item">
-        <a href="27-kotedzhna-zabudova-po-vul-kulykivskii-u-m-lvovi.html">
-        <img src="images/object/object2html/6.jpeg" alt="Image 2"></a>
+        <a href="objekty/27-kotedzhna-zabudova-po-vul-kulykivskii-u-m-lvovi.html">
+        <img src="objekty/images/object/object2html.photo/7.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Котеджна забудова по вул. Куликівській у м. Львові</h2>
         </div>
     </div>
     
     <div class="portfolio-item">
-        <a href="24-mahazyn-silpo-po-vul-shevchenka-207-v-m-cherkasy.html">
-        <img src="images/object/object2html/7.jpeg" alt="Image 2"></a>
+        <a href="objekty/24-mahazyn-silpo-po-vul-shevchenka-207-v-m-cherkasy.html">
+        <img src="objekty/images/object/object2html.photo/8(1).jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Магазин «Сільпо» по вул. Шевченка, 207 в м. Черкаси
             </h2>
@@ -98,8 +141,8 @@
     </div>
     
     <div class="portfolio-item">
-        <a href="49-pryvatnyi-kotedzh-po-vul-liubinskii-v-m-lvovi.html">
-        <img src="images/object/object2html/8.jpeg" alt="Image 2"></a>
+        <a href="objekty/49-pryvatnyi-kotedzh-po-vul-liubinskii-v-m-lvovi.html">
+        <img src="objekty/images/object/object2html.photo/8.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Приватний котедж по вул. Любінській в м. Львові
             </h2>
@@ -107,8 +150,8 @@
     </div>
     
     <div class="portfolio-item">
-        <a href="23-mahazyn-silpo-po-bul-shevchenka-54-v-m-mariupoli.html">
-        <img src="images/object/object2html/9.jpeg" alt="Image 2"></a>
+        <a href="objekty/23-mahazyn-silpo-po-bul-shevchenka-54-v-m-mariupoli.html">
+        <img src="objekty/images/object/object2html.photo/9.jpeg" alt="Image 2"></a>
         <div class="description">
             <h2>Магазин «Сільпо» по бул. Шевченка, 54 в м. Маріупол</h2>
         </div>

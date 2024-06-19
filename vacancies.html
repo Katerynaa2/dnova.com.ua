@@ -4,78 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вакансії</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="assets/css/vacancies.styles/vacancies.css">
     <link rel="stylesheet" href="assets/css/main.css/header.css">
     <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-
+    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
 
     <script src="contact.js" defer></script>
 
+
 </head>
 <body>
+
+    
     <div class="bottom-fixed-container">
+        <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
         <div class="header">
-            <img src="images/logo.png" alt="Логотип Компанії">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Компанії">
+            </a>
+            <button class="catalog-button">
+                <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </button>
             <nav class="nav">
                 <a class="nav__link" href="news.html">Новини</a>
-            <!--  <a class="nav__link" href="#services" id="servicesBtn">Послуги</a>  -->
+                <a class="nav__link" href="perevahu.html">Переваги</a>
+
                 <a class="nav__link" href="object.html">Об'єкти</a>
                 <a class="nav__link" href="partners.html">Партнери</a>
                 <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
                 <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#contact" id="contactsBtn">Контакти</a> 
+                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                 <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
             </nav>
         </div>
+        
     </div>
+    <script>
+document.querySelector('.catalog-button').addEventListener('click', function() {
+    var menu = document.querySelector('.nav');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});
+</script>
 
 
 
-    <div class="vacancies-container"style="margin-top: 170px;">
+<div class="catalog-popup" id="catalogPopup">
+    <h2>Контакти</h2>
+    <p>
+        <strong>Ярослав Чемеринський</strong><br>
+        <em>Директор</em><br><br>
+        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+        79014 м. Львів<br>
+        вул. Мучна 23, офіс 4<br>
+        <strong>Email:</strong> office@denova.сom.ua<br>
+        <strong>Website:</strong> denovs.com.ua
+    </p>
+</div>
+
+
+
+
+    <div class="vacancies-container" style="margin-top: 5px;">
         <h1>Вакансії</h1>
-
+    
         <div class="vacancyy">
-            <h2>Обліковець</h2>
-            <p><strong>Вимоги:</strong></p>
-            <ul>
-                <li>вища освіта (спеціальність — облік і аудит);</li>
-                <li>знання 1С;</li>
-                <li>досвід роботи в будівельній компанії буде перевагою;</li>
-                <li>чесність, відповідальність.</li>
-            </ul>
-            <p><strong>Обов’язки:</strong></p>
-            <ul>
-                <li>фінансовий облік;</li>
-                <li>контроль дотримання касової дисципліни.</li>
-            </ul>
+            <h2 class="technology">Обліковець</h2>
+            <div class="thelanguage">
+                <strong>Вимоги:</strong>
+                <ul>
+                    <li>вища освіта (спеціальність — облік і аудит);</li>
+                    <li>знання 1С;</li>
+                    <li>досвід роботи в будівельній компанії буде перевагою;</li>
+                    <li>чесність, відповідальність.</li>
+                </ul>
+                <strong>Обов’язки:</strong>
+                <ul>
+                    <li>фінансовий облік;</li>
+                    <li>контроль дотримання касової дисципліни.</li>
+                </ul>
+            </div>
         </div>
-
+    
         <div class="vacancyy">
-            <h2>Менеджер по інженерії</h2>
-            <p><strong>Вимоги:</strong></p>
-            <ul>
-                <li>Вища освіта (ПЦБ);</li>
-                <li>досвід роботи на аналогічній посаді від 2 років;</li>
-                <li>знання ПК (AutoCAD, АВК);</li>
-                <li>наявність авто.</li>
-            </ul>
-            <p><strong>Обов’язки:</strong></p>
-            <ul>
-                <li>Вища освіта (ВК, ТГВ);</li>
-                <li>досвід роботи на аналогічній посаді від 2 років;</li>
-                <li>знання ПК (AutoCAD, АВК);</li>
-                <li>наявність авто.</li>
-            </ul>
+            <h2 class="technology">Менеджер по інженерії</h2>
+            <div class="thelanguage">
+                <strong>Вимоги:</strong>
+                <ul>
+                    <li>Вища освіта (ПЦБ);</li>
+                    <li>досвід роботи на аналогічній посаді від 2 років;</li>
+                    <li>знання ПК (AutoCAD, АВК);</li>
+                    <li>наявність авто.</li>
+                </ul>
+                <strong>Обов’язки:</strong>
+                <ul>
+                    <li>Вища освіта (ВК, ТГВ);</li>
+                    <li>досвід роботи на аналогічній посаді від 2 років;</li>
+                    <li>знання ПК (AutoCAD, АВК);</li>
+                    <li>наявність авто.</li>
+                </ul>
+            </div>
         </div>
-
+    
         <div class="contactt">
             <p>Якщо вас цікавить перспектива роботи в нашій компанії, будь ласка, надішліть нам своє резюме на електронну адресу <a href="mailto:hr@denova.com.ua">hr@denova.com.ua</a>.</p>
         </div>
     </div>
-
+    <script>
+        // Скрипт для открытия и закрытия блоков
+        document.addEventListener('DOMContentLoaded', function() {
+            var spoilers = document.querySelectorAll('.technology');
+            spoilers.forEach(function(spoiler) {
+                spoiler.addEventListener('click', function() {
+                    var language = this.nextElementSibling;
+                    if (language.style.maxHeight) {
+                        language.style.maxHeight = null;
+                    } else {
+                        language.style.maxHeight = language.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
 
     <div class="bottom-container"style="margin-top: 30px;">
         <img src="images/logo.png" alt="Логотип Компанії">

@@ -2,7 +2,7 @@
 
 /* Загальні стилі */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Залиште ваш шрифт або змініть за потребою */
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,10 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: hsl(0, 4%, 26%);
 }
 
 p {

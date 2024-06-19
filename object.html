@@ -1,54 +1,95 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="assets/css/objects.styles/objects.css"> 
     <link rel="stylesheet" href="assets/css/main.css/bottom-container.css"> 
     <link rel="stylesheet" href="assets/css/main.css/header.css"> 
-    <link rel="stylesheet" href="objects2.htm"> 
+    <link rel="stylesheet" href="assets/css/objects.styles/objects.css"> 
+    <link rel="stylesheet" href="assets/css/objects.styles/portfolio.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
+
+    <script src="contact.js" defer></script>
+
+
 </head>
 
     
 <body>
     <div class="bottom-fixed-container">
+        <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
         <div class="header">
-            <img src="images/logo.png" alt="Логотип Компанії">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Компанії">
+            </a>
+            <button class="catalog-button">
+                <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </button>
             <nav class="nav">
                 <a class="nav__link" href="news.html">Новини</a>
-            <!--  <a class="nav__link" href="#services" id="servicesBtn">Послуги</a>  -->
+                <a class="nav__link" href="perevahu.html">Переваги</a>
                 <a class="nav__link" href="object.html">Об'єкти</a>
                 <a class="nav__link" href="partners.html">Партнери</a>
                 <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
                 <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="news.html" id="contactsBtn">Контакти</a> 
+                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                 <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
             </nav>
         </div>
+        
     </div>
+    <script>
+document.querySelector('.catalog-button').addEventListener('click', function() {
+    var menu = document.querySelector('.nav');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});
+</script>
+
+<div class="catalog-popup" id="catalogPopup">
+    <h2>Контакти</h2>
+    <p>
+        <strong>Ярослав Чемеринський</strong><br>
+        <em>Директор</em><br><br>
+        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+        79014 м. Львів<br>
+        вул. Мучна 23, офіс 4<br>
+        <strong>Email:</strong> office@denova.сom.ua<br>
+        <strong>Website:</strong> denovs.com.ua
+    </p>
+</div>
 
 
-<div class="portfolio-item"style="margin-top: 170px;">
-    <a href="102-vlashtuvannia-inzhenernykh-merezh-u-zhytlovomu-kompleksi-na-vul-lemkivskii-u-lvovi.html">
-    <img src="images/object/phpThumb_cache_denova.com.ua__src8eeeef7cd7c6ba8b2746fbb6c57993ad_par2989039fb8e3f9cad95929782c202d6e_dat1501838710.jpeg" alt="Image 1"></a>
+<div class="portfolio-item"style="margin-top: 5px;">
+    <a href="objekty/102-vlashtuvannia-inzhenernykh-merezh-u-zhytlovomu-kompleksi-na-vul-lemkivskii-u-lvovi.html">
+    <img src="objekty/images/object/phpThumb_cache_denova.com.ua__src8eeeef7cd7c6ba8b2746fbb6c57993ad_par2989039fb8e3f9cad95929782c202d6e_dat1501838710.jpeg" alt="Image 1"></a>
     <div class="description">
         <h2>Влаштування інженерних мереж у житловому комплексі на вул.Лемківській у Львові</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href="101-vlashtuvannia-inzhenernykh-merezh-na-fabrytsi-bader-ukraina-v-m-horodok-lvivskoi-oblasti.html">
-    <img src="images/object/phpThumb_cache_denova.com.ua__srcade7e1f85b182de7bf4a4ec8baf20372_par2989039fb8e3f9cad95929782c202d6e_dat1501838321.jpeg" alt="Image 2"></a>
+    <a href="objekty/101-vlashtuvannia-inzhenernykh-merezh-na-fabrytsi-bader-ukraina-v-m-horodok-lvivskoi-oblasti.html">
+    <img src="objekty/images/object/phpThumb_cache_denova.com.ua__srcade7e1f85b182de7bf4a4ec8baf20372_par2989039fb8e3f9cad95929782c202d6e_dat1501838321.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Влаштування інженерних мереж на фабриці «Бадер Україна» в м. Городок Львівської області</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href= "103-budivnytstvo-zhytlovoho-budynku-z119-u-lvovi.html" alt="Image 2"></a>
-    <img src="images/object/phpThumb_cache_denova.com.ua__srcd8657218da5bc16f368e0eca795a52f7_par2989039fb8e3f9cad95929782c202d6e_dat1501840858.jpeg" alt="Image 2"></a>
+    <a href= "objekty/103-budivnytstvo-zhytlovoho-budynku-z119-u-lvovi.html" alt="Image 2"></a>
+    <img src="objekty/images/object/phpThumb_cache_denova.com.ua__srcd8657218da5bc16f368e0eca795a52f7_par2989039fb8e3f9cad95929782c202d6e_dat1501840858.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Будівництво житлового будинку «Z119» у Львові
         </h2>
@@ -56,16 +97,16 @@
 </div>
 
 <div class="portfolio-item">
-    <a href="100-remont-prymishchennia-mahazynu-brendovoi-mobilnoi-tekhniky-u-lvovi.html">
-    <img src="images/object/phpThumb_cache_denova.com.ua__src6ac10edf601a714c149e6415a189d84a_par2989039fb8e3f9cad95929782c202d6e_dat1496127401.jpeg" alt="Image 2"></a>
+    <a href="objekty/100-remont-prymishchennia-mahazynu-brendovoi-mobilnoi-tekhniky-u-lvovi.html">
+    <img src="objekty/images/object/phpThumb_cache_denova.com.ua__src6ac10edf601a714c149e6415a189d84a_par2989039fb8e3f9cad95929782c202d6e_dat1496127401.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Ремонт приміщення магазину брендової мобільної техніки у Львові</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href="99-vlashtuvannia-inzhenernykh-merezh-v-bahatokvartyrnomu-zhytlovomu-budynku-u-lvovi.html">
-    <img src="images/object/phpThumb_cache_denova.com.ua__src07a4efbc85dcba380f45883b50bdca24_par2989039fb8e3f9cad95929782c202d6e_dat1495187006.jpeg" alt="Image 2"></a>
+    <a href="objekty/99-vlashtuvannia-inzhenernykh-merezh-v-bahatokvartyrnomu-zhytlovomu-budynku-u-lvovi.html">
+    <img src="objekty/images/object/phpThumb_cache_denova.com.ua__src07a4efbc85dcba380f45883b50bdca24_par2989039fb8e3f9cad95929782c202d6e_dat1495187006.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Влаштування інженерних мереж в багатоквартирному житловому будинку у Львові</h2>
 
@@ -73,8 +114,8 @@
 </div> 
 
 <div class="portfolio-item">
-    <a href="98-montazh-merezh-kanalizatsii-zhytlovoho-kompleksu-na-vul-pid-dubom-u-lvovi.html">
-    <img src="images/object/6.jpeg" alt="Image 2"></a>
+    <a href="objekty/98-montazh-merezh-kanalizatsii-zhytlovoho-kompleksu-na-vul-pid-dubom-u-lvovi.html">
+    <img src="objekty/images/object//6.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2> Монтаж мереж каналізації житлового комплексу на вул. Під Дубом у Львові</h2>
 
@@ -86,32 +127,32 @@
 
  
 <div class="portfolio-item">
-    <a href="97-vlashtuvannia-vnutrishnikh-merezh-opalennia-vodopostachannia-kanalizatsii-ta-zovnishnikh-merezh-vodopostachannia-i-kanalizatsii-na-vul-na-nyvakh-v-m-lvovi.html">
-    <img src="images/object/7.jpeg" alt="Image 2"></a>
+    <a href="objekty/97-vlashtuvannia-vnutrishnikh-merezh-opalennia-vodopostachannia-kanalizatsii-ta-zovnishnikh-merezh-vodopostachannia-i-kanalizatsii-na-vul-na-nyvakh-v-m-lvovi.html">
+    <img src="objekty/images/object/7.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Влаштування внутрішніх мереж опалення, водопостачання, каналізації та зовнішніх мереж водопостачання і каналізації на вул. На Нивах в м. Львові</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href="96-oblashtuvannia-inzhenernykh-merezh-v-hotelno-restorannomu-kompleksi-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
-    <img src="images/object/8.jpeg" alt="Image 2"></a>
+    <a href="objekty/96-oblashtuvannia-inzhenernykh-merezh-v-hotelno-restorannomu-kompleksi-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
+    <img src="objekty/images/object/8.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Облаштування інженерних мереж в готельно-ресторанному комплексі з адміністративними приміщеннями та автостоянкою м. Червоноград</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href="95-remontni-roboty-ofisnoho-prymishchennia-lvivhazu.html">
-    <img src="images/object/9.jpeg" alt="Image 2"></a>
+    <a href="objekty/95-remontni-roboty-ofisnoho-prymishchennia-lvivhazu.html">
+    <img src="objekty/images/object/9.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Ремонтні роботи офісного приміщення «Львівгазу»</h2>
     </div>
 </div>
 
 <div class="portfolio-item">
-    <a href="94-hotelno-restorannyi-kompleks-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
-    <img src="images/object/10.jpeg" alt="Image 2"></a>
+    <a href="objekty/94-hotelno-restorannyi-kompleks-z-administratyvnymy-prymishchenniamy-ta-avtostoiankoiu-m-chervonohrad.html">
+    <img src="objekty/images/object/10.jpeg" alt="Image 2"></a>
     <div class="description">
         <h2>Готельно-ресторанний комплекс з адміністративними приміщеннями та автостоянкою м. Червоноград</h2>
     </div>
@@ -164,14 +205,7 @@
 
 <div class="bottom-container"style="margin-top: 30px;">
     <img src="images/logo.png" alt="Логотип Компанії">
-    <nav class="nav">
-        <a class="nav__link" href="news.html">Новини</a>
-        <a class="nav__link" href="object.html">Об'єкти</a>
-        <a class="nav__link" href="partners.html">Партнери</a>
-        <a class="nav__link" href="awards.html">Нагороди</a>
-        <a class="nav__link" href="documentation.html">Документація</a>
-        <a class="nav__link" href="vacancies.html">Вакансії</a>
-    </nav>
+ 
 
     <div class="contact-info">
         <p>Контактна інформація:</p>

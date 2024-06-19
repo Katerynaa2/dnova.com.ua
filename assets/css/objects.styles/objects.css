@@ -1,11 +1,18 @@
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Залиште ваш шрифт або змініть за потребою */
+    color: #1d2129;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
 .portfolio-item {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid transparent; /* замінено border-color на transparent */
     overflow: hidden;
-    transition: border-color 0.3s ease;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -14,8 +21,16 @@
     margin-bottom: 30px; /* Відступ внизу між кожним елементом, крім останнього */
 }
 
-.portfolio-item:hover {
-    border-color: #007bff;
+.portfolio-item img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Додаємо тінь */
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
 }
 
 .portfolio-item img {
@@ -25,19 +40,16 @@
     transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover img {
-    transform: scale(1.05);
-}
-
 .portfolio-item .description {
     flex: 1;
     padding: 20px;
 }
 
 .portfolio-item h2 {
+    font-family: Arial, sans-serif;
     margin-top: 0;
-    font-size: 18px;
-    color: #333;
+    font-size: 15px;
+    color: hwb(45 22% 55%);
 }
 
 .portfolio-item p {
@@ -45,6 +57,7 @@
     font-size: 16px;
     color: #666;
 }
+
 
 @media (max-width: 768px) {
     .portfolio-item {

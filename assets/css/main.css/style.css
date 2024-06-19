@@ -1,27 +1,12 @@
-/* Основні стилі */
+/* Додайте ці стилі на початок вашого файлу, якщо вони ще не додані */
+
 body {
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Залиште ваш шрифт або змініть за потребою */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kaushan Script', cursive;
+.container {
+    margin: 0 auto; /* Центрувати контейнер на сторінці */
 }
-
-/* Загальні стилі для навігації 
-.nav__link {
-    text-decoration: none;
-    color: #333;
-}*/
-
-/* Загальні стилі для зображень 
-img {
-    max-width: 100%;
-    height: auto;
-}*/
-/* Спільні стилі для всіх блоків 
-.block {
-    margin-bottom: 20px; /* Визначаємо відступ між блоками 
-}*/
 
