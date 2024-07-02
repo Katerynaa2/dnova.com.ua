@@ -2,7 +2,7 @@
     display: flex;
     align-items: center; /* Вирівнюємо елементи по вертикалі */
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .photos {
@@ -119,7 +119,7 @@ ol li a:hover {
         align-items: center; /* Центруємо по горизонталі */
         padding: 20px; /* Зменшуємо відступи */
         text-align: center;
-        bottom: 10px;
+        bottom: 2px;
     }
     
 

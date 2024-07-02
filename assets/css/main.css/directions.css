@@ -187,37 +187,39 @@
         white-space: nowrap; /* Забороняємо перенесення тексту */
     }
 
-    
-        .directions {
-            bottom: 110px; /* Піднімаємо вище від нижнього краю */
-            position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
-            width: 100%; /* Займаємо всю ширину */
-            display: flex; /* Використовуємо флексбокс для вирівнювання */
-            justify-content: center; /* Центруємо горизонтально */
-        }
-    
+    /* Стилі для блоку з напрямками */
+.directions {
+    display: flex;
+    flex-direction: row; /* Змінено напрямок розташування елементів на горизонтальний */
+    align-items: center; /* Центруємо елементи по вертикалі */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    margin-top: 264px; /* Змінений верхній відступ для центрування */
+}
 
-    .photo {
-        width: 80px; /* Зменшуємо ширину фото */
-        height: 80px; /* Зменшуємо висоту фото */
-        margin-right: 10px; /* Зменшуємо відступ між фото та текстом */
-    }
 
-    .directions a {
-        font-family: 'Roboto', sans-serif; /* Використовуємо шрифт Roboto */
-        font-size: 14px; /* Розмір шрифту */
-        font-weight: 300; /* Робимо шрифт тоншим */
-        color: #8B4513; /* Коричневий колір тексту */
-        text-decoration: none; /* Видаляємо підкреслення */
-        transition: text-decoration 0.3s ease; /* Плавний перехід для підкреслення */
-        border-bottom: 2px solid transparent; /* Прозора лінія під текстом */
-    }
+/* Стилі для фотографії в блоку з напрямками */
+.photo {
+    width: 120px; /* Збільшена ширина фото */
+    height: 120px; /* Збільшена висота фото */
+    border-radius: 50%; /* Закруглення країв фото */
+    margin-right: 20px; /* Доданий відступ між фото та текстом */
+}
 
-    .directions a:hover {
-        text-decoration: none; /* Видаляємо звичайне підкреслення */
-        border-bottom: 2px solid #8B4513; /* Додаємо підкреслення - товстий коричневий */
-    }
 
+/* Стилі для тексту напрямків */
+.direction p {
+    font-family: 'Roboto', sans-serif; /* Шрифт */
+    font-size: 18px; /* Збільшений розмір шрифту */
+    color: #333; /* Колір тексту */
+    margin: 8px 0; /* Збільшені відступи між абзацами */
+}
+
+
+/* Плавне збільшення при наведенні миші */
+.directions-container:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
     /* Зменшуємо розмір шрифту посилань */
     ol li a {
         font-size: 14px; /* Зменшуємо розмір шрифту посилань */
