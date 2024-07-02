@@ -154,10 +154,14 @@
 
     .catalog-button {
         display: block; /* Показуємо кнопку на мобільних пристроях */
-        position: absolute; /* Змінено позиціювання на 'absolute' */
-        top: 60px; /* Відступ від верху */
+        position: fixed; /* Фіксуємо кнопку */
+        top: 48px; /* Відступ від верху */
         right: 5px; /* Відступ справа */
         z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
+        background-color: #fff; /* Білий колір фону кнопки */
+        padding: 10px; /* Додаємо внутрішні відступи */
+        border: 1px solid #333; /* Додаємо рамку */
+        border-radius: 5px; /* Додаємо округлені кути */
     }
 
     .catalog-button .bar {
@@ -237,11 +241,15 @@
     }
 
     .catalog-button {
-        display: block;
-        position: absolute;
-        top: 50px; /* Зменшуємо відступ від верху */
-        right: 5px;
-        z-index: 1001;
+        display: block; /* Показуємо кнопку на мобільних пристроях */
+        position: fixed; /* Фіксуємо кнопку */
+        top: 40px; /* Відступ від верху */
+        right: 5px; /* Відступ справа */
+        z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
+        background-color: #fff; /* Білий колір фону кнопки */
+        padding: 10px; /* Додаємо внутрішні відступи */
+        border: 1px solid #333; /* Додаємо рамку */
+        border-radius: 5px; /* Додаємо округлені кути */
     }
 
     .catalog-button .bar {
@@ -319,11 +327,15 @@
     }
 
     .catalog-button {
-        display: block;
-        position: absolute;
-        top: 50px; /* Зменшуємо відступ від верху */
-        right: 5px;
-        z-index: 1001;
+        display: block; /* Показуємо кнопку на мобільних пристроях */
+        position: fixed; /* Фіксуємо кнопку */
+        top: 40px; /* Відступ від верху */
+        right: 5px; /* Відступ справа */
+        z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
+        background-color: #fff; /* Білий колір фону кнопки */
+        padding: 10px; /* Додаємо внутрішні відступи */
+        border: 1px solid #333; /* Додаємо рамку */
+        border-radius: 5px; /* Додаємо округлені кути */
     }
 
     .catalog-button .bar {

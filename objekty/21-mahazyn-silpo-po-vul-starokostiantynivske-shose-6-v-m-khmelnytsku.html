@@ -5,31 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Влаштування інженерних мереж</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="">
-    <link rel="stylesheet" href="assets/css/main.css/bottom-container.css">
-    <link rel="stylesheet" href="assets/css/objects.styles/portfolio.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bottom-container.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
     <script src="objects.html" defer></script>
+    <script src="contact.js" defer></script>
+
 
 
 </head>
 <body>
+
     <div class="bottom-fixed-container">
+        <img src="D:\denova.com\images\Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
         <div class="header">
-            <img src="images/logo.png" alt="Логотип Компанії">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Компанії">
+            </a>
+            <button class="catalog-button">
+                <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </button>
             <nav class="nav">
                 <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="#services" id="servicesBtn">Послуги</a> <!-- Додано ID -->
-                <a class="nav__link" href="objects.html">Об'єкти</a>
-                <a class="nav__link" href="#navigation_menu/partners">Партнери</a>
+                <a class="nav__link" href="perevahu.html">Переваги</a>
+                <a class="nav__link" href="object.html">Об'єкти</a>
+                <a class="nav__link" href="partners.html">Партнери</a>
                 <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
                 <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> <!-- Змінено ID на "contactsBtn" -->
+                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
                 <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
             </nav>
         </div>
+        
     </div>
+    <script>
+document.querySelector('.catalog-button').addEventListener('click', function() {
+    var menu = document.querySelector('.nav');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+});
+</script>
+
 
 
     <div class="container"style =  "margin-top:170px">

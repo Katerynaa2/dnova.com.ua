@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Влаштування внутрішніх мереж водопостачання, каналізування, вентиляції</title>
+    <link rel="stylesheet" href="assets/css/main.css/header.css">
+    <link rel="stylesheet" href="objekty/css/bottom-container.css">
+    <link rel="stylesheet" href="objekty/css/style.css">
+
+    <script src="objects.html" defer></script>
+    <script src="contact.js" defer></script>
+
+    <style>
+        .highlight-text {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 10px;
+            border-left: 4px solid #ff6600;
+            background-color: #f9f9f9;
+        }
+        .portfolio-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bottom-fixed-container">
+        <img src="D:\denova.com\images\Frame-17.jpg" alt="Frame" class="responsive-image">
+    </div>
+    <div class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Логотип Компанії">
+        </a>
+        <button class="catalog-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav">
+            <a class="nav__link" href="news.html">Новини</a>
+            <a class="nav__link" href="perevahu.html">Переваги</a>
+            <a class="nav__link" href="object.html">Об'єкти</a>
+            <a class="nav__link" href="partners.html">Партнери</a>
+            <a class="nav__link" href="awards.html">Нагороди</a>
+            <a class="nav__link" href="documentation.html">Документація</a>
+            <a class="nav__link" href="vacancies.html">Вакансії</a>
+            <a class="nav__link" href="#news" id="contactsBtn">Контакти</a>
+            <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
+        </nav>
+    </div>
+
+    <script>
+        document.querySelector('.catalog-button').addEventListener('click', function() {
+            var menu = document.querySelector('.nav');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+    </script>
+
+    <div class="container">
+        <h1>Влаштування внутрішніх мереж водопостачання, каналізування, вентиляції і опалення житлового будинку по вул. Клепарівська, буд. 15 в м. Львові.</h1>
+        
+        <p class="highlight-text">Тривають роботи по влаштуванню нашими фахівцями внутрішніх мереж водопостачання, каналізування, вентиляції і опалення житлового будинку по вул. Клепарівська, буд. 15 в м. Львові.
+        Даний проект, крім його локації і архітектури, також вирізняється використанням якісних матеріалів та обладнання провідних виробників (Rechau, KAN-therm, Kermi). Так, для мереж каналізації використовуються високоміцні шумопоглинаючі каналізаційні труби.
+        На даний момент влаштовуються мережі підвалу та 5-ї секції.</p>
+        
+        <div class="portfolio-item">
+            <img src="images/1.png" alt="Photo 1">
+            <img src="images/2.png" alt="Photo 4">
+            <img src="images/3.png" alt="Photo 7">
+        </div>
+    </div>
+
+    <div class="bottom-container" style="margin-top:40px">
+        <img src="images/logo.png" alt="Логотип Компанії">
+        
+        <nav class="nav">
+            <a class="nav__link" href="#news">Новини</a>
+            <a class="nav__link" href="#services">Послуги</a>
+            <a class="nav__link" href="#objects">Об'єкти</a>
+            <a class="nav__link" href="#partners">Партнери</a>
+            <a class="nav__link" href="#awards">Нагороди</a>
+            <a class="nav__link" href="#documentation">Документація</a>
+            <a class="nav__link" href="#vacancies">Вакансії</a>
+            <a class="nav__link" href="#contact">Контакти</a>
+        </nav>
+
+        <div class="contact-info">
+            <p>Контактна інформація:</p>
+            <p>Телефон: +123456789</p>
+            <p>Email: info@example.com</p>
+        </div>
+    </div>
+</body>
+</html>

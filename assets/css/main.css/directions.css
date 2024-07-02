@@ -87,18 +87,19 @@
 /* Адаптивні стилі для риски між кругами */
 @media (max-width: 768px) {
     .slide-info {
-        width: 100%; /* Змінюємо ширину блоку на повну ширину екрану */
-        max-width: none; /* Видаляємо обмеження максимальної ширини */
-        
-        bottom: 200px; /* Зменшуємо відстань від нижнього краю */
-        justify-content: space-around; /* Рівномірно розподіляємо простір між елементами */
-        margin-top: 0;
-        display: none;
+        width: 100%;
+        max-width: none;
+        bottom: 10px; /* Зменшуємо відстань від нижнього краю */
+        justify-content: space-around;
+        display: flex; /* Змінено на flex для відображення елементу */
+    
     }
 
     .info-circle {
         margin-bottom: 8px; /* Зменшуємо відступ між кругами */
         position: relative; /* Задаємо позицію relative для підпису */
+        left: 35px; /* Зсуваємо кружечки трохи вправо */
+
     }
 
     .info-circle::after {
@@ -118,7 +119,7 @@
 
     
         .directions {
-            bottom: 90px; /* Піднімаємо вище від нижнього краю */
+            bottom: 100px; /* Піднімаємо вище від нижнього краю */
             position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
             width: 100%; /* Займаємо всю ширину */
             display: flex; /* Використовуємо флексбокс для вирівнювання */
@@ -156,18 +157,19 @@
 
 @media (max-width: 480px) {
     .slide-info {
-        width: 100%; /* Змінюємо ширину блоку на повну ширину екрану */
-        max-width: none; /* Видаляємо обмеження максимальної ширини */
-        
-        bottom: 200px; /* Зменшуємо відстань від нижнього краю */
-        justify-content: space-around; /* Рівномірно розподіляємо простір між елементами */
-        margin-top: 0;
-        display: none;
+        width: 100%;
+        max-width: none;
+        bottom: 10px; /* Зменшуємо відстань від нижнього краю */
+        justify-content: space-around;
+        display: flex; /* Змінено на flex для відображення елементу */
+    }
     }
 
     .info-circle {
         margin-bottom: 8px; /* Зменшуємо відступ між кругами */
         position: relative; /* Задаємо позицію relative для підпису */
+        left: 35px; /* Зсуваємо кружечки трохи вправо */
+
     }
 
     .info-circle::after {
@@ -187,7 +189,7 @@
 
     
         .directions {
-            bottom: 90px; /* Піднімаємо вище від нижнього краю */
+            bottom: 110px; /* Піднімаємо вище від нижнього краю */
             position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
             width: 100%; /* Займаємо всю ширину */
             display: flex; /* Використовуємо флексбокс для вирівнювання */
@@ -221,26 +223,27 @@
         font-size: 14px; /* Зменшуємо розмір шрифту посилань */
         font-weight: 300; /* Робимо шрифт тоншим */
     }
-}
+
 @media (max-width: 360px) {
     .slide-info {
-        width: 100%; /* Змінюємо ширину блоку на повну ширину екрану */
-        max-width: none; /* Видаляємо обмеження максимальної ширини */
-        
-        bottom: 200px; /* Зменшуємо відстань від нижнього краю */
-        justify-content: space-around; /* Рівномірно розподіляємо простір між елементами */
-        margin-top: 0;
-        display: none;
+        width: 100%;
+        max-width: none;
+        bottom: 10px; /* Зменшуємо відстань від нижнього краю */
+        justify-content: space-around;
+        display: flex; /* Змінено на flex для відображення елементу */
     }
 
     .info-circle {
         margin-bottom: 8px; /* Зменшуємо відступ між кругами */
         position: relative; /* Задаємо позицію relative для підпису */
+        left: 35px; /* Зсуваємо кружечки трохи вправо */
+
     }
 
     .info-circle::after {
         height: 3px; /* Зменшуємо висоту риски між кругами */
         bottom: calc(50% - 3px); /* Змінюємо позицію риски під кругами */
+
     }
 
     .circle-text {

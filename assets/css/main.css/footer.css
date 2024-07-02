@@ -56,6 +56,7 @@ ol li a:hover {
     text-decoration: underline; /* Підкреслюємо посилання при наведенні */
 }
 /* Медійні запити для мобільних пристроїв */
+
 @media (max-width: 768px) {
     .footer {
         display: flex; /* Змінюємо на flex для легшого центрування */
@@ -64,7 +65,7 @@ ol li a:hover {
         align-items: center; /* Центруємо по горизонталі */
         padding: 20px; /* Зменшуємо відступи */
         text-align: center;
-        bottom: 177px;
+        bottom: 10px;
     }
 
     .photos {
@@ -108,5 +109,94 @@ ol li a:hover {
 
     ol li a {
         font-size: 14px; /* Зменшуємо розмір шрифту посилань */
+    }
+}
+@media (max-width: 480px) {
+    .footer {
+        display: flex; /* Змінюємо на flex для легшого центрування */
+        flex-direction: column; /* Вертикальне розташування елементів */
+        justify-content: center; /* Центруємо по вертикалі */
+        align-items: center; /* Центруємо по горизонталі */
+        padding: 20px; /* Зменшуємо відступи */
+        text-align: center;
+        bottom: 10px;
+    }
+    
+
+    .photos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    ol {
+        padding-left: 15px;
+    }
+
+    ol li {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    ol li a {
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .footer {
+        display: flex; /* Змінюємо на flex для легшого центрування */
+        flex-direction: column; /* Вертикальне розташування елементів */
+        justify-content: center; /* Центруємо по вертикалі */
+        align-items: center; /* Центруємо по горизонталі */
+        padding: 20px; /* Зменшуємо відступи */
+        text-align: center;
+        bottom: 10px;
+    }
+
+    .photos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        line-height: 1.0;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    ol {
+        padding-left: 10px;
+    }
+
+    ol li {
+        margin-bottom: 4px;
+        font-size: 10px;
+    }
+
+    ol li a {
+        font-size: 10px;
     }
 }
