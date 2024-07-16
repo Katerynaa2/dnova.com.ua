@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Покращене слайд-шоу</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/image1.jpg" alt="Зображення 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image2.jpg" alt="Зображення 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/image3.jpg" alt="Зображення 3">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000, // Збільшуємо затримку на 5000 мс
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      effect: 'flip', // Змінюємо тип анімації на flip
+      speed: 1500, // Змінюємо швидкість переміщення між слайдами
+      parallax: true // Додаємо паралакс-ефект
+    });
+  </script>
+
+</body>
+</html>

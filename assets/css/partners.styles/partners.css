@@ -1,4 +1,25 @@
 /* General Styles */
+/* Скидання стилів для всіх елементів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Залиште ваш шрифт або змініть за потребою */
+    color: #1d2129;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.partners.container {
+    text-align: center;
+    margin-top: 0; /* Змінено на 0, щоб заголовок був на самому верху */
+    padding-top: 100px; /* Додано padding-top для відступу зверху
+
 body {
     font-family: 'Montserrat', sans-serif; /* Залиште ваш шрифт або змініть за потребою */
     color: #1d2129;
@@ -42,4 +63,60 @@ body {
     margin-bottom: 20px;
 }
 
+/* Медіа-запити для малих екранів */
+@media (max-width: 768px) {
+    .partner-slide {
+        width: calc(33.33% - 20px); /* По 3 фото в ряд */
+    }
 
+    .partner-slide img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .partners.container h2 {
+        font-size: 20px; 
+    }
+
+    .partner-slide p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-slide {
+        width: calc(33.33% - 20px); /* Все ще по 3 фото в ряд */
+    }
+
+    .partner-slide img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .partners.container h2 {
+        font-size: 18px; 
+    }
+
+    .partner-slide p {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .partner-slide {
+        width: calc(33.33%  - 30px); /* По 1 фото в ряд для дуже малих екранів */
+    }
+
+    .partner-slide img {
+        width: 80px; 
+        height: auto; 
+    }
+
+    .partners.container h2 {
+        font-size: 16px; 
+    }
+
+    .partner-slide p {
+        font-size: 10px; 
+    }
+}

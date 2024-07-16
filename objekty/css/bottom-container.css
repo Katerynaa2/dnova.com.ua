@@ -1,3 +1,4 @@
+
 .bottom-container {
     bottom: 0;
     width: 100%;
@@ -7,15 +8,17 @@
     border-top-left-radius: 50% 20%; /* Вигин зверху ліворуч */
     border-top-right-radius: 50% 20%; /* Вигин зверху праворуч */
     overflow: hidden; /* Приховати вміст, який виходить за межі блоку */
+    margin-top: 70px;
+    
 }
 
 .bottom-container img {
-    width: 25x; /* Розмір логотипу */
-    margin-bottom: -20px; /* Відступ, щоб логотип знаходився в вигині */
+    width: 190px; /* Розмір логотипу */
+    margin-bottom: -50px; /* Відступ, щоб логотип знаходився в вигині */
 }
 
 .bottom-container .contact-info {
-    margin-top: 10px; /* Відступи між навігаційним меню і контактами */
+    margin-top: 75px; /* Відступи між навігаційним меню і контактами */
     color: #333333; /* Колір тексту контактів */
     font-size: 14px; /* Розмір шрифту контактів */
     font-family: 'Montserrat', sans-serif; /* Шрифт контактів */

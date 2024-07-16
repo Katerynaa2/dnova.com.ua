@@ -58,6 +58,7 @@ input[name="btn"] {
 
 /* Анімація перемикання слайдів */
 .slide {
+    transition: opacity 1s ease-in-out;
     width: 20%;
     transition: 0.7s;
 }
@@ -80,14 +81,12 @@ input[name="btn"] {
     margin-left: -40%;
 }
 
-#btn5:checked ~ .slide.slide5 {
-    margin-left: -60%;
-}
 /* Адаптивні стилі для телефонів */
 /* Адаптивні стилі для телефонів */
 @media (max-width: 768px) {
     .slide-show {
-        width: 100%;
+        margin-top: 40px;
+        width: 500px;
         height: 200px;
         margin-top: 25px; /* Збільшуємо відстань від верху */
         border: 3px solid hsl(40, 20%, 94%);
@@ -126,8 +125,9 @@ input[name="btn"] {
 /* Додаткові стилі для дуже малих екранів */
 @media (max-width: 480px) {
     .slide-show {
-        width: 100%;
-        height: 200px;
+        margin-top: 25px;
+        width: 430px;
+        height: 180px;
         margin-top: 25px; /* Збільшуємо відстань від верху */
         border: 3px solid hsl(40, 20%, 94%);
         position: relative; /* Змінюємо позицію на relative */
@@ -164,8 +164,9 @@ input[name="btn"] {
 /* Додаткові стилі для екрану з максимальною шириною 360px */
 @media (max-width: 360px) {
     .slide-show {
-        height: 100px; /* Further reduced height */
-        width: 90%;    /* Slightly larger width for very small screens */
+        margin-top: 15px;
+        height: 330px; /* Further reduced height */
+        width: 180px;    /* Slightly larger width for very small screens */
         margin: 0 auto; /* Center the slideshow */
         margin-top: 10px; /* Further reduced top margin */
         border: 1px solid hsl(40, 20%, 94%); /* Even thinner border */

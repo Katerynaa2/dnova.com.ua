@@ -16,8 +16,6 @@
 
 </head>
 <body>
-
-    
     <div class="bottom-fixed-container">
         <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
     </div>
@@ -56,107 +54,94 @@ document.querySelector('.catalog-button').addEventListener('click', function() {
 });
 </script>
 
+    
+    
+    <div class="catalog-popup" id="catalogPopup">
+        <h2>Контакти</h2>
+        <p>
+            <strong>Ярослав Чемеринський</strong><br>
+            <em>Директор</em><br><br>
+            <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
+            <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
+            <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+            79014 м. Львів<br>
+            вул. Мучна 23, офіс 4<br>
+            <strong>Email:</strong> office@denova.сom.ua<br>
+            <strong>Website:</strong> denovs.com.ua
+        </p>
+    </div>
 
 
-<div class="catalog-popup" id="catalogPopup">
-    <h2>Контакти</h2>
-    <p>
-        <strong>Ярослав Чемеринський</strong><br>
-        <em>Директор</em><br><br>
-        <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
-        <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
-        <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
-        79014 м. Львів<br>
-        вул. Мучна 23, офіс 4<br>
-        <strong>Email:</strong> office@denova.сom.ua<br>
-        <strong>Website:</strong> denovs.com.ua
-    </p>
+
+<div class="vacancies-container">
+    <h1>Вакансії</h1>
+    
+<div class="vacancyy">
+    <h2 class="technology">Обліковець</h2>
+    <div class="thelanguage">
+        <strong>Вимоги:</strong>
+        <ul>
+            <li>вища освіта (спеціальність — облік і аудит);</li>
+            <li>знання 1С;</li>
+            <li>досвід роботи в будівельній компанії буде перевагою;</li>
+            <li>чесність, відповідальність.</li>
+        </ul>
+        <strong>Обов’язки:</strong>
+        <ul>
+            <li>фінансовий облік;</li>
+            <li>контроль дотримання касової дисципліни.</li>
+        </ul>
+    </div>
 </div>
 
-
-
-
-    <div class="vacancies-container" style="margin-top: 5px;">
-        <h1>Вакансії</h1>
-    
-        <div class="vacancyy">
-            <h2 class="technology">Обліковець</h2>
-            <div class="thelanguage">
-                <strong>Вимоги:</strong>
-                <ul>
-                    <li>вища освіта (спеціальність — облік і аудит);</li>
-                    <li>знання 1С;</li>
-                    <li>досвід роботи в будівельній компанії буде перевагою;</li>
-                    <li>чесність, відповідальність.</li>
-                </ul>
-                <strong>Обов’язки:</strong>
-                <ul>
-                    <li>фінансовий облік;</li>
-                    <li>контроль дотримання касової дисципліни.</li>
-                </ul>
-            </div>
-        </div>
-    
-        <div class="vacancyy">
-            <h2 class="technology">Менеджер по інженерії</h2>
-            <div class="thelanguage">
-                <strong>Вимоги:</strong>
-                <ul>
-                    <li>Вища освіта (ПЦБ);</li>
-                    <li>досвід роботи на аналогічній посаді від 2 років;</li>
-                    <li>знання ПК (AutoCAD, АВК);</li>
-                    <li>наявність авто.</li>
-                </ul>
-                <strong>Обов’язки:</strong>
-                <ul>
-                    <li>Вища освіта (ВК, ТГВ);</li>
-                    <li>досвід роботи на аналогічній посаді від 2 років;</li>
-                    <li>знання ПК (AutoCAD, АВК);</li>
-                    <li>наявність авто.</li>
-                </ul>
-            </div>
-        </div>
-    
-        <div class="contactt">
-            <p>Якщо вас цікавить перспектива роботи в нашій компанії, будь ласка, надішліть нам своє резюме на електронну адресу <a href="mailto:hr@denova.com.ua">hr@denova.com.ua</a>.</p>
-        </div>
+<div class="vacancyy">
+    <h2 class="technology">Менеджер по інженерії</h2>
+    <div class="thelanguage">
+        <strong>Вимоги:</strong>
+        <ul>
+            <li>Вища освіта (ПЦБ);</li>
+            <li>досвід роботи на аналогічній посаді від 2 років;</li>
+            <li>знання ПК (AutoCAD, АВК);</li>
+            <li>наявність авто.</li>
+        </ul>
+        <strong>Обов’язки:</strong>
+        <ul>
+            <li>Вища освіта (ВК, ТГВ);</li>
+            <li>досвід роботи на аналогічній посаді від 2 років;</li>
+            <li>знання ПК (AutoCAD, АВК);</li>
+            <li>наявність авто.</li>
+        </ul>
     </div>
-    <script>
-        // Скрипт для открытия и закрытия блоков
-        document.addEventListener('DOMContentLoaded', function() {
-            var spoilers = document.querySelectorAll('.technology');
-            spoilers.forEach(function(spoiler) {
-                spoiler.addEventListener('click', function() {
-                    var language = this.nextElementSibling;
-                    if (language.style.maxHeight) {
-                        language.style.maxHeight = null;
-                    } else {
-                        language.style.maxHeight = language.scrollHeight + 'px';
-                    }
-                });
-            });
+</div>
+
+<div class="contactt">
+    <p>Якщо вас цікавить перспектива роботи в нашій компанії, будь ласка, надішліть нам своє резюме на електронну адресу <a href="mailto:office@denova.com.ua">office@denova.com.ua</a>.</p>
+</div>
+</div>
+<script>
+// Скрипт для відкриття та закриття блоків
+document.addEventListener('DOMContentLoaded', function() {
+    var spoilers = document.querySelectorAll('.technology');
+    spoilers.forEach(function(spoiler) {
+        spoiler.addEventListener('click', function() {
+            var language = this.nextElementSibling;
+            language.style.maxHeight = language.style.maxHeight ? null : language.scrollHeight + 'px';
+            this.classList.toggle('active');
         });
-    </script>
+    });
+});
+</script>
     
+<div class="bottom-container">
+    <img src="images/logo.png" alt="Логотип Компанії">
     
-
-    <div class="bottom-container"style="margin-top: 30px;">
-        <img src="images/logo.png" alt="Логотип Компанії">
-        <nav class="nav">
-            <a class="nav__link" href="news.html">Новини</a>
-            <a class="nav__link" href="object.html">Об'єкти</a>
-            <a class="nav__link" href="partners.html">Партнери</a>
-            <a class="nav__link" href="awards.html">Нагороди</a>
-            <a class="nav__link" href="documentation.html">Документація</a>
-            <a class="nav__link" href="vacancies.html">Вакансії</a>
-        </nav>
-    
-        <div class="contact-info">
-            <p>Контактна інформація:</p>
-            <p>Телефон: +123456789</p>
-            <p>Email: info@example.com</p>
-        </div>
-
+    <div class="contact-info">
+       <p>ТзОВ «Денова»</p>
+        <p>Адреса: <a href="https://maps.app.goo.gl/Cw1U95pTBwfFzvrB6" target="_blank">79014 м. Львів, вул. Мучна 23, офіс 4</a></p>
+        <p>Тел.: +38 032 295 84 62</p>
+        <p>E-mail: <a href="mailto:office@denova.com.ua">office@denova.com.ua</a></p>
     </div>
+</div>
+
 </body>
 </html>

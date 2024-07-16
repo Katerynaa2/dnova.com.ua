@@ -2,7 +2,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #1d2129;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -11,24 +11,34 @@ body {
 .news-container {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 /* Header styles */
-h1 {
-    color: #333;
+.news-container h1 {
+    
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    height: 54.6667px;
 }
+
 
 /* Individual news items */
 .news-item {
     border-bottom: 1px solid #eaeaea;
     padding: 15px 0;
     margin-bottom: 15px;
+}
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Зменшення висоти зображення */
+    width: auto; /* Збереження пропорцій */
+    margin-top: -130px; /* Підняття зображення вище */
 }
 
 .news-item h2 {

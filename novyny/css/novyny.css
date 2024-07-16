@@ -1,6 +1,8 @@
-.news-container {
+/*.news-container {
     margin-top: 170px;
     text-align: center;
+    font-family: 'Arial', sans-serif; 
+
 }
 
 .news-container h1 {
@@ -8,6 +10,8 @@
     margin-bottom: 20px;
     font-weight: bold;
     color: #333;
+    font-family: 'Times New Roman', serif; /* Змінюємо шрифт тільки для заголовка 
+
 }
 
 .news-container p {
@@ -29,4 +33,4 @@
     line-height: 1.5;
     color: #333;
     margin-bottom: 10px;
-}
+}*/
