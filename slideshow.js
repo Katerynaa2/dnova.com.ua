@@ -1,29 +1,26 @@
-// Отримуємо всі елементи слайдів
-const slides = document.querySelectorAll('.slide');
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
 
-// Початковий індекс слайда
-let currentIndex = 0;
+showSlides();
 
-// Функція для зміни слайдів
-function showSlide(index) {
-    // Приховуємо всі слайди
-    slides.forEach((slide, i) => {
-        if (i === index) {
-            slide.style.display = 'block'; // Показуємо поточний слайд
-        } else {
-            slide.style.display = 'none'; // Приховуємо інші слайди
-        }
-    });
-}
-
-// Функція для автоматичної зміни слайдів
-function autoChangeSlide() {
-    currentIndex++; // Збільшуємо індекс
-    if (currentIndex >= slides.length) {
-        currentIndex = 0; // Повертаємося до першого слайда, якщо досягли кінця
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].style.transition = "opacity 1s ease-in-out"; // Додаємо плавність
     }
-    showSlide(currentIndex); // Показуємо новий слайд
+    slideIndex++;
+    if (slideIndex >= slides.length) { slideIndex = 0; }
+    slides[slideIndex].classList.add("active");
+    setTimeout(showSlides, 5000); // Змінює слайд кожні 5 секунд
 }
 
-// Запускаємо автоматичну зміну слайдів кожні 5 секунд
-setInterval(autoChangeSlide, 3000);
+function plusSlides(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) { slideIndex = 0; }
+    if (slideIndex < 0) { slideIndex = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        slides[i].style.transition = "opacity 1s ease-in-out"; // Додаємо плавність
+    }
+    slides[slideIndex].classList.add("active");
+}

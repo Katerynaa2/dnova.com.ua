@@ -1,3 +1,4 @@
+
 .bottom-container {
     bottom: 0;
     width: 100%;
@@ -23,3 +24,62 @@
     font-family: 'Montserrat', sans-serif; /* Шрифт контактів */
 }
 
+/* Адаптивні стилі для малих екранів */
+@media (max-width: 768px) {
+    .bottom-container {
+        height: 200px; /* Зменшена висота блоку */
+        margin-top: 50px; /* Зменшена відстань від верху */
+        border-top-left-radius: 50% 15%; /* Зменшені вигини зверху ліворуч */
+        border-top-right-radius: 50% 15%; /* Зменшені вигини зверху праворуч */
+    }
+
+    .bottom-container img {
+        width: 150px; /* Зменшений розмір логотипу */
+        margin-bottom: -40px; /* Зменшений відступ для логотипу */
+    }
+
+    .bottom-container .contact-info {
+        margin-top: 60px; /* Зменшені відступи між навігаційним меню і контактами */
+        font-size: 12px; /* Зменшений розмір шрифту контактів */
+    }
+}
+
+/* Додаткові стилі для дуже малих екранів */
+@media (max-width: 480px) {
+    .bottom-container {
+        height: 160px; /* Ще зменшена висота блоку */
+        margin-top: 40px; /* Ще зменшена відстань від верху */
+        border-top-left-radius: 50% 10%; /* Ще зменшені вигини зверху ліворуч */
+        border-top-right-radius: 50% 10%; /* Ще зменшені вигини зверху праворуч */
+    }
+
+    .bottom-container img {
+        width: 120px; /* Ще зменшений розмір логотипу */
+        margin-bottom: -30px; /* Ще зменшений відступ для логотипу */
+    }
+
+    .bottom-container .contact-info {
+        margin-top: 50px; /* Ще зменшені відступи між навігаційним меню і контактами */
+        font-size: 10px; /* Ще зменшений розмір шрифту контактів */
+    }
+}
+
+/* Додаткові стилі для екранів з максимальною шириною 360px */
+@media (max-width: 360px) {
+    .bottom-container {
+        height: 140px; /* Ще зменшена висота блоку */
+        margin-top: 30px; /* Ще зменшена відстань від верху */
+        border-top-left-radius: 50% 8%; /* Ще зменшені вигини зверху ліворуч */
+        border-top-right-radius: 50% 8%; /* Ще зменшені вигини зверху праворуч */
+    }
+
+    .bottom-container img {
+        width: 100px; /* Ще зменшений розмір логотипу */
+        margin-bottom: -20px; /* Ще зменшений відступ для логотипу */
+    }
+
+    .bottom-container .contact-info {
+        margin-top: 40px; /* Ще зменшені відступи між навігаційним меню і контактами */
+        font-size: 8px; /* Ще зменшений розмір шрифту контактів */
+    }
+}

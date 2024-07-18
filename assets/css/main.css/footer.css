@@ -65,7 +65,8 @@ ol li a:hover {
         align-items: center; /* Центруємо по горизонталі */
         padding: 20px; /* Зменшуємо відступи */
         text-align: center;
-        bottom: 10px;
+        bottom: 45px;
+
     }
 
     .photos {
@@ -119,7 +120,8 @@ ol li a:hover {
         align-items: center; /* Центруємо по горизонталі */
         padding: 20px; /* Зменшуємо відступи */
         text-align: center;
-        bottom: 2px;
+        bottom: 45px;
+
     }
     
 
@@ -164,7 +166,7 @@ ol li a:hover {
         align-items: center; /* Центруємо по горизонталі */
         padding: 20px; /* Зменшуємо відступи */
         text-align: center;
-        bottom: 10px;
+        bottom: 35px;
     }
 
     .photos {

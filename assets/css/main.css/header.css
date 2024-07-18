@@ -1,383 +1,247 @@
-/* Стилі для контейнера, який залишається фіксованим вгорі */
-.bottom-fixed-container {
-    position: fixed; /* Робить блок фіксованим */
-    top: 0; /* Розміщує блок вгорі вікна браузера */
-    width: 100%; /* Установлює ширину контейнера на 100% ширини батьківського елемента */
-    max-width: 100%; /* Установлює максимальну ширину контейнера на 100% ширини батьківського елемента */
-    height: 120px; /* Висота контейнера */
-    z-index: 1000; /* Шар контейнера */
-    background-size: 1400px 200px; /* Встановіть потрібну ширину та висоту фону */
-    background-position: center; /* Центрування фону */
-
-    background-repeat: no-repeat; /* Запобігає повторенню фону */
-}
-.responsive-image{
-    position: fixed; /* Робить блок фіксованим */
-    top: 0; /* Розміщує блок вгорі вікна браузера */
-    width: 100%; /* Установлює ширину контейнера на 100% ширини батьківського елемента */
-    max-width: 100%; /* Установлює максимальну ширину контейнера на 100% ширини батьківського елемента */
-    height: 120px; /* Висота контейнера */
-    z-index: 1000; /* Шар контейнера */
-    background-size: 1400px 200px; /* Встановіть потрібну ширину та висоту фону */
-    background-position: center; /* Центрування фону */
-    background-repeat: no-repeat; /* Запобігає повторенню фону */
-
-
+/* Фіксований контейнер вгорі */
+.bottom-fixed-container, .responsive-image {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    max-width: 100%; 
+    height: 120px; 
+    z-index: 1000; 
+    background-size: 1400px 200px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
-/* Стилі для заголовку h1 */
+/* Заголовок h1 */
 .header h1 {
-    position: fixed; /* Робить заголовок фіксованим */
-    top: 0; /* Розміщує вгорі вікна браузера */
-    left: 70px; /* Задає відступ зліва */
-    margin-top: 49px; /* Задає відступ зверху */
-    color: hwb(0 15% 73%); /* Колір тексту */
-    font-size: 11px; /* Розмір шрифту */
-    font-family: 'Montserrat', sans-serif; /* Шрифт */
+    position: fixed; 
+    top: 0; 
+    left: 70px; 
+    margin-top: 49px; 
+    color: hwb(0 15% 73%); 
+    font-size: 11px; 
+    text-transform: uppercase; 
+
 }
 
-/* Стилі для логотипу img */
+/* Логотип */
 .header img {
-    margin-top: 5px; /* Відступ зверху */
-    position: fixed; /* Робить логотип фіксованим */
-    top: 0; /* Розміщує вгорі вікна браузера */
-    left: 5px; /* Розміщує зліва */
-    width: 250px; /* Ширина логотипу */
-    height: auto; /* Автоматично обчислює висоту, щоб зберегти співвідношення сторін */
+    margin-top: 5px; 
+    position: fixed; 
+    top: 0; 
+    left: 5px; 
+    width: 250px; 
+    height: auto; 
 }
 
-/* Стилі для заголовка .header */
+/* Заголовок */
 .header {
-    padding-top: 80px; /* Встановлює внутрішні відступи зверху */
-    position: sticky; /* Залишає заголовок з прилипшим ефектом при прокручуванні */
-    top: 0; /* Розміщує вгорі вікна браузера */
-    z-index: 1000; /* Шар заголовка */
-    height: 60px; /* Висота заголовка */
+    padding-top: 80px; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    height: 60px; 
 }
+
+/* Підзаголовок h2 */
 h2 {
-    font-size: 15px; /* Розмір шрифту заголовка */
-    margin-bottom: 10px; /* Відстань від нижнього краю заголовка */
+    font-size: 15px; 
+    margin-bottom: 10px; 
 }
 
-/* Стилі для навігації .nav */
+/* Навігація */
 .nav {
-    font-size: 14px; /* Розмір навігації */
-    text-transform: uppercase; /* Верхній регістр */
-    text-align: center; /* Розміщений по центру */
-    margin-top: 13px; /* Відступ зверху */
-    
+    font-size: 14px; 
+    text-transform: uppercase; 
+    text-align: center; 
+    margin-top: 13px; 
 }
 
-/* Стилі для посилань навігації .nav__link */
+/* Посилання навігації */
 .nav__link {
-    display: inline-block; /* Блоки в одному рядку */
-    vertical-align: top; /* Вертикальне вирівнювання по верхньому краю */
-    margin: 0 15px; /* Зовнішні відступи ліворуч та праворуч */
-    position: relative; /* Позиціонування відносно батьківського елемента */
-    color: hwb(135 92% 5%); /* Колір тексту */
-    text-decoration: none; /* Відсутність підкреслення */
-    transition: color .1s linear; /* Плавна анімація зміни кольору тексту */
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 0 15px; 
+    position: relative; 
+    color: hwb(135 92% 5%); 
+    text-decoration: none; 
+    transition: color 0.1s linear; 
 }
 
-/* Стилі для ефекту підкреслення .nav__link::after */
+/* Підкреслення посилання */
 .nav__link::after {
-    content: ""; /* Пустий контент */
-    width: 100%; /* Ширина підкреслення */
-    height: 3px; /* Висота підкреслення */
-
-    background-color: rgb(240, 241, 232); /* Колір підкреслення */
-
-    opacity: 0; /* Прозорість 0 */
-    position: absolute; /* Абсолютне позиціонування */
-    top: 100%; /* Розміщення підкреслення відповідно до нижнього краю посилання */
-    left: 0%; /* Розміщення зліва */
-    z-index: 1; /* Шар */
-    
-    transition: opacity 0.1s linear; /* Плавна анімація зміни прозорості */
+    content: ""; 
+    width: 100%; 
+    height: 3px; 
+    background-color: rgb(240, 241, 232); 
+    opacity: 0; 
+    position: absolute; 
+    top: 100%; 
+    left: 0%; 
+    z-index: 1; 
+    transition: opacity 0.1s linear; 
 }
 
-/* Стилі при наведенні курсора .nav__link:hover */
+/* Посилання при наведенні */
 .nav__link:hover {
-    color: rgb(238, 206, 206); /* Колір тексту при наведенні */
+    color: rgb(238, 206, 206); 
 }
 
-/* Стилі при наведенні курсора .nav__link:hover:after */
-.nav__link:hover:after {
-    opacity: 1; /* Прозорість підкреслення 1 при наведенні */
+.nav__link:hover::after {
+    opacity: 1; 
 }
+
+/* Каталог */
 .catalog {
     display: none;
 }
-.catalog-button{
+
+.catalog-button {
     display: none;
 }
 
+/* Медіа-запити для адаптації */
 @media (max-width: 768px) {
     .bottom-fixed-container {
-        height: 2px; /* Зменшуємо висоту фонового контейнера для мобільних пристроїв */
-    }
-
-    .responsive-image {
-        width: 100%;
-        z-index: 999; /* Змінено, щоб зменшити важливість фото зображення */
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        height: 80px; /* Зменшуємо висоту для менших екранів */
+        background-size: 800px 150px; /* Коригуємо розмір фонового зображення */
     }
 
     .header h1 {
-        position: fixed; /* Робить заголовок фіксованим */
-        top: 0; /* Розміщує вгорі вікна браузера */
-        left: 37px; /* Задає відступ зліва */
-        margin-top: 28px; /* Задає відступ зверху */
-        color: hwb(0 6% 93%); /* Колір тексту */
-        font-size: 5px; /* Розмір шрифту */
-        font-family: 'Montserrat', sans-serif; /* Шрифт */
+        font-size: 15px; /* Менший шрифт для мобільних */
+        position: fixed;
+        top: 65px; /* Адаптуємо відстань від верхньої частини */
+        left: 50%; /* Розміщуємо заголовок посередині */
+        transform: translateX(-50%); /* Вирівнюємо по центру */
+        margin-top: 20px; /* Зберігаємо відстань від верхньої частини */
+        color: #fff; 
+        font-family: 'Montserrat', sans-serif; 
+        text-align: center;
+        white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */
     }
 
     .header img {
-        margin-top: 3px; /* Відступ зверху */
-        position: fixed; /* Робить логотип фіксованим */
-        top: 0; /* Розміщує вгорі вікна браузера */
-        left: 3px; /* Розміщує зліва */
-        width: 180px; /* Ширина логотипу */
-        height: auto; /* Автоматично обчислює висоту, щоб зберегти співвідношення сторін */
+        width: 200px; /* Збільшуємо ширину логотипу для мобільних */
     }
-
-    .nav {
-        display: none; /* Приховуємо навігацію на малих екранах */
-    }
-
-    .catalog-button {
-        display: block; /* Показуємо кнопку на мобільних пристроях */
-        position: fixed; /* Фіксуємо кнопку */
-        top: 48px; /* Відступ від верху */
-        right: 5px; /* Відступ справа */
-        z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
-        background-color: transparent; /* Прозорий фон */
-        border: none; /* Без рамки */
-        cursor: pointer; /* Курсор при наведенні */
-    }
-    
-    .catalog-button .bar {
-        display: block; /* Відображаємо як блочні елементи */
-        width: 25px; /* Ширина кожної смуги */
-        height: 3px; /* Висота кожної смуги */
-        background-color: #fff; /* Колір смуг */
-        margin: 5px 0; /* Відступ між смугами */
-    }
-    
-    @media (min-width: 769px) {
-        .catalog-button {
-            display: none; /* Сховати кнопку на великих екранах */
-        }
-    }
-    
 
     .nav {
         display: none;
         flex-direction: column;
         position: fixed;
-        top: 80px;
+        top: 80px; /* Відстань від верхньої частини */
         left: 0;
         width: 100%;
-        background-color: #fff; /* Змінено на білий колір */
-        color: #000; /* Чорний колір тексту */
+        background-color: #fff;
         box-shadow: 0 2px 4px rgba(231, 81, 81, 0.916);
         z-index: 999;
     }
-    
+
     .nav__link {
         margin: 10px 0;
-        text-align: center;
-        color: #000; /* Чорний колір тексту для посилань */
+        color: #000;
     }
-    
+
+    .catalog-button {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 1001;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .catalog-button .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
 
     .catalog-button.active + .nav {
-        display: flex; /* Показуємо підменю при кліку на кнопку */
+        display: flex; /* Показуємо навігацію при активній кнопці */
     }
 }
 
-/* Стилі для екранів з максимальною шириною 480px */
 @media (max-width: 480px) {
     .bottom-fixed-container {
-        height: 1px; /* Ще більше зменшуємо висоту контейнера */
-    }
-
-    .responsive-image {
-        width: 100%; /* Займаємо всю ширину екрану */
-        height: auto;
-        z-index: 999;
-        display: block;
-        margin: auto;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        height: 60px; /* Зменшуємо висоту для дуже малих екранів */
+        background-size: 600px 100px; /* Коригуємо розмір фонового зображення */
     }
 
     .header h1 {
+        font-size: 15px; /* Менший шрифт для мобільних */
         position: fixed;
-        top: 0;
-        left: 20px; /* Зменшуємо відступ зліва */
-        margin-top: 20px; /* Зменшуємо відступ зверху */
-        color: hwb(0 15% 73%);
-        font-size: 4px; /* Зменшуємо розмір шрифту */
-        font-family: 'Montserrat', sans-serif;
+        top: 70px; /* Адаптуємо відстань від верхньої частини */
+        left: 50%; /* Розміщуємо заголовок посередині */
+        transform: translateX(-50%); /* Вирівнюємо по центру */
+        margin-top: 20px; /* Зберігаємо відстань від верхньої частини */
+        color: #fff; 
+        font-family: 'Montserrat', sans-serif; 
+        text-align: center;
+        white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */
     }
 
     .header img {
-        margin-top: 2px; /* Зменшуємо відступ зверху */
-        position: fixed;
-        top: 0;
-        left: 3px;
-        width: 158px; /* Зменшуємо ширину логотипу */
-        height: auto;
-    }
-
-    .nav {
-        display: none;
+        width: 180px; /* Збільшуємо ширину логотипу для дуже малих екранів */
     }
 
     .catalog-button {
-        display: block; /* Показуємо кнопку на мобільних пристроях */
-        position: fixed; /* Фіксуємо кнопку */
-        top: 42px; /* Відступ від верху */
-        right: 5px; /* Відступ справа */
-        z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
-        background-color: transparent; /* Прозорий фон */
-        border: none; /* Без рамки */
-        cursor: pointer; /* Курсор при наведенні */
-    }
-    
-    .catalog-button .bar {
-        display: block; /* Відображаємо як блочні елементи */
-        width: 25px; /* Ширина кожної смуги */
-        height: 3px; /* Висота кожної смуги */
-        background-color: #fff; /* Колір смуг */
-        margin: 5px 0; /* Відступ між смугами */
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
-    .nav {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #fff; /* Змінено на білий колір */
-        color: #000; /* Чорний колір тексту */
-        box-shadow: 0 2px 4px rgba(231, 81, 81, 0.916);
-        z-index: 999;
+    .catalog-button .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
     }
-    
-    .nav__link {
-        margin: 10px 0;
-        text-align: center;
-        color: #000; /* Чорний колір тексту для посилань */
-    }
-    
 
     .catalog-button.active + .nav {
-        display: flex;
+        display: flex; /* Показуємо навігацію при активній кнопці */
     }
 }
+
+/* Media query for screens up to 360px wide */
 @media (max-width: 360px) {
     .bottom-fixed-container {
-        height: 1px; /* Ще більше зменшуємо висоту контейнера */
-    }
-
-    .responsive-image {
-        width: 100%; /* Займаємо всю ширину екрану */
-        height: auto;
-        z-index: 999;
-        display: block;
-        margin: auto;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        height: 50px; /* Зменшуємо висоту для дуже малих екранів */
+        background-size: 500px 80px; /* Коригуємо розмір фонового зображення */
     }
 
     .header h1 {
+        font-size: 10px; /* Ще менший шрифт для мобільних */
         position: fixed;
-        top: 0;
-        left: 20px; /* Зменшуємо відступ зліва */
-        margin-top: 20px; /* Зменшуємо відступ зверху */
-        color: hwb(0 15% 73%);
-        font-size: 4px; /* Зменшуємо розмір шрифту */
-        font-family: 'Montserrat', sans-serif;
+        top: 65px; /* Адаптуємо відстань від верхньої частини */
+        left: 50%; /* Розміщуємо заголовок посередині */
+        transform: translateX(-50%); /* Вирівнюємо по центру */
+        margin-top: 15px; /* Зберігаємо відстань від верхньої частини */
+        color: #fff; 
+        font-family: 'Montserrat', sans-serif; 
+        text-align: center;
+        white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */
     }
 
     .header img {
-        margin-top: 2px; /* Зменшуємо відступ зверху */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 150px; /* Зменшуємо ширину логотипу */
-        height: auto;
-    }
-
-    .nav {
-        display: none;
+        width: 160px; /* Зменшуємо ширину логотипу для ще менших екранів */
     }
 
     .catalog-button {
-        display: block; /* Показуємо кнопку на мобільних пристроях */
-        position: fixed; /* Фіксуємо кнопку */
-        top: 28px; /* Відступ від верху */
-        right: 5px; /* Відступ справа */
-        z-index: 1001; /* Забезпечуємо, що кнопка буде вище інших елементів */
-        background-color: transparent; /* Прозорий фон */
-        border: none; /* Без рамки */
-        cursor: pointer; /* Курсор при наведенні */
+        top: 5px; /* Ще вище від верхнього краю */
+        right: 5px; /* Ще ближче до правого краю */
     }
-    
+
     .catalog-button .bar {
-        display: block; /* Відображаємо як блочні елементи */
-        width: 25px; /* Ширина кожної смуги */
-        height: 3px; /* Висота кожної смуги */
-        background-color: #fff; /* Колір смуг */
-        margin: 5px 0; /* Відступ між смугами */
+        width: 20px; /* Зменшуємо ширину полоси */
+        margin: 4px 0; /* Зменшуємо відстань між полосами */
     }
-
-    .nav {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #fff; /* Змінено на білий колір */
-        color: #000; /* Чорний колір тексту */
-        box-shadow: 0 2px 4px rgba(231, 81, 81, 0.916);
-        z-index: 999;
-    }
-    
-    .nav__link {
-        margin: 10px 0;
-        text-align: center;
-        color: #000; /* Чорний колір тексту для посилань */
-    }
-    
-
-    .catalog-button.active + .nav {
-        display: flex;
-    }
-    
 }
-

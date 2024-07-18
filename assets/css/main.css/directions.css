@@ -1,65 +1,15 @@
-/* CSS для риски між кругами */
-.slide-info {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -150px;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 600px;
-}
-
-.info-item {
-    text-align: center;
-}
-
-
-.info-circle {
-    width: 37px;
-    height: 37px;
-    background-color: hwb(36 6% 65%);
-    border-radius: 50%;
-    margin-bottom: 10px;
-    z-index: 2; /* Розташовуємо риску за кругами */
-    position: relative; /* Задаємо позицію relative */
-   
-}
-
-.info-circle:nth-child(2) {
-    background-color:  hsl(54, 26%, 38%);
-}
-
-.info-circle:nth-child(3) {
-    background-color: hsl(54, 26%, 38%);
-}
-
-/* CSS для риски між кругами */
-.info-circle::after {
-    content: '';
-    width: 100%; /* Простягаємо риску на всю ширину сторінки */
-    height: 5px; /* Збільшуємо висоту риски */
-    position: absolute;
-    bottom: calc(50% - 7px); /* Позиція риски під кругами */
-    left: 0;
-    margin-left: calc(-50vw + 50%); /* Вирівнюємо риску відносно центру сторінки */
-    z-index: -1; /* Розташовуємо риску за кругами */
-}
-
-.info-item p {
-    font-family: Arial, sans-serif; /* Встановлюємо шрифт Arial або, у відсутності його, застосовуємо загальні шрифти без засічок */
-    font-size: 18px; /* Задаємо розмір шрифту */
-    font-weight: bold; /* Задаємо жирний стиль шрифту */
-    color: #333; /* Задаємо колір тексту */
-}
 
 /* Стилі для блоку з напрямками */
+.directions-container {
+    margin-top: 100px; /* Змінений верхній відступ для центрування */
+}
+
 .directions {
     display: flex;
     flex-direction: row; /* Змінено напрямок розташування елементів на горизонтальний */
     align-items: center; /* Центруємо елементи по вертикалі */
     justify-content: center; /* Центруємо елементи по горизонталі */
-    margin-top: 280px; /* Змінений верхній відступ для центрування */
+    margin-top: 10px; /* Змінений верхній відступ для центрування */
 }
 
 /* Стилі для фотографії в блоку з напрямками */
@@ -69,6 +19,7 @@
     border-radius: 50%; /* Закруглення країв фото */
     margin-right: 20px; /* Доданий відступ між фото та текстом */
 }
+
 .directions a {
     font-family: 'Roboto', sans-serif; /* Використовуємо шрифт Roboto */
     font-size: 18px; /* Розмір шрифту */
@@ -92,14 +43,13 @@
         bottom: 10px; /* Зменшуємо відстань від нижнього краю */
         justify-content: space-around;
         display: flex; /* Змінено на flex для відображення елементу */
-    
+        margin-top: -235px; /* Додаємо негативне значення для підняття */
     }
 
     .info-circle {
         margin-bottom: 8px; /* Зменшуємо відступ між кругами */
         position: relative; /* Задаємо позицію relative для підпису */
         left: 35px; /* Зсуваємо кружечки трохи вправо */
-
     }
 
     .info-circle::after {
@@ -117,15 +67,13 @@
         white-space: nowrap; /* Забороняємо перенесення тексту */
     }
 
-    
-        .directions {
-            bottom: 100px; /* Піднімаємо вище від нижнього краю */
-            position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
-            width: 100%; /* Займаємо всю ширину */
-            display: flex; /* Використовуємо флексбокс для вирівнювання */
-            justify-content: center; /* Центруємо горизонтально */
-        }
-    
+    .directions {
+        bottom: 200px; /* Піднімаємо вище від нижнього краю */
+        position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
+        width: 100%; /* Займаємо всю ширину */
+        display: flex; /* Використовуємо флексбокс для вирівнювання */
+        justify-content: center; /* Центруємо горизонтально */
+    }
 
     .photo {
         width: 80px; /* Зменшуємо ширину фото */
@@ -134,18 +82,8 @@
     }
 
     .directions a {
-        font-family: 'Roboto', sans-serif; /* Використовуємо шрифт Roboto */
-        font-size: 14px; /* Розмір шрифту */
+        font-size: 14px; /* Зменшуємо розмір шрифту */
         font-weight: 300; /* Робимо шрифт тоншим */
-        color: #8B4513; /* Коричневий колір тексту */
-        text-decoration: none; /* Видаляємо підкреслення */
-        transition: text-decoration 0.3s ease; /* Плавний перехід для підкреслення */
-        border-bottom: 2px solid transparent; /* Прозора лінія під текстом */
-    }
-
-    .directions a:hover {
-        text-decoration: none; /* Видаляємо звичайне підкреслення */
-        border-bottom: 2px solid #8B4513; /* Додаємо підкреслення - товстий коричневий */
     }
 
     /* Зменшуємо розмір шрифту посилань */
@@ -159,17 +97,16 @@
     .slide-info {
         width: 100%;
         max-width: none;
-        bottom: 10px; /* Зменшуємо відстань від нижнього краю */
+        bottom: 110px; /* Зменшуємо відстань від нижнього краю */
         justify-content: space-around;
         display: flex; /* Змінено на flex для відображення елементу */
-    }
+        margin-top: -240px; /* Додаємо негативне значення для підняття */
     }
 
     .info-circle {
         margin-bottom: 8px; /* Зменшуємо відступ між кругами */
         position: relative; /* Задаємо позицію relative для підпису */
         left: 35px; /* Зсуваємо кружечки трохи вправо */
-
     }
 
     .info-circle::after {
@@ -187,106 +124,22 @@
         white-space: nowrap; /* Забороняємо перенесення тексту */
     }
 
-    /* Стилі для блоку з напрямками */
-.directions {
-    display: flex;
-    flex-direction: row; /* Змінено напрямок розташування елементів на горизонтальний */
-    align-items: center; /* Центруємо елементи по вертикалі */
-    justify-content: center; /* Центруємо елементи по горизонталі */
-    margin-top: 264px; /* Змінений верхній відступ для центрування */
-}
-
-
-/* Стилі для фотографії в блоку з напрямками */
-.photo {
-    width: 120px; /* Збільшена ширина фото */
-    height: 120px; /* Збільшена висота фото */
-    border-radius: 50%; /* Закруглення країв фото */
-    margin-right: 20px; /* Доданий відступ між фото та текстом */
-}
-
-
-/* Стилі для тексту напрямків */
-.direction p {
-    font-family: 'Roboto', sans-serif; /* Шрифт */
-    font-size: 18px; /* Збільшений розмір шрифту */
-    color: #333; /* Колір тексту */
-    margin: 8px 0; /* Збільшені відступи між абзацами */
-}
-
-
-/* Плавне збільшення при наведенні миші */
-.directions-container:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-    /* Зменшуємо розмір шрифту посилань */
-    ol li a {
-        font-size: 14px; /* Зменшуємо розмір шрифту посилань */
-        font-weight: 300; /* Робимо шрифт тоншим */
+    .directions {
+        margin-top: 50px; /* Змінений верхній відступ для центрування */
+        display: flex; /* Змінено напрямок розташування елементів на горизонтальний */
+        align-items: center; /* Центруємо елементи по вертикалі */
+        justify-content: center; /* Центруємо елементи по горизонталі */
     }
-
-@media (max-width: 360px) {
-    .slide-info {
-        width: 100%;
-        max-width: none;
-        bottom: 10px; /* Зменшуємо відстань від нижнього краю */
-        justify-content: space-around;
-        display: flex; /* Змінено на flex для відображення елементу */
-    }
-
-    .info-circle {
-        margin-bottom: 8px; /* Зменшуємо відступ між кругами */
-        position: relative; /* Задаємо позицію relative для підпису */
-        left: 35px; /* Зсуваємо кружечки трохи вправо */
-
-    }
-
-    .info-circle::after {
-        height: 3px; /* Зменшуємо висоту риски між кругами */
-        bottom: calc(50% - 3px); /* Змінюємо позицію риски під кругами */
-
-    }
-
-    .circle-text {
-        position: absolute; /* Задаємо абсолютну позицію для тексту в кругу */
-        bottom: -30px; /* Зсуваємо текст від круга */
-        left: 50%; /* Центруємо текст відносно батьківського елементу */
-        transform: translateX(-50%); /* Вирівнюємо текст по горизонталі */
-        font-size: 5px; /* Розмір шрифту для тексту всередині круга */
-        color: #fff; /* Колір тексту */
-        white-space: nowrap; /* Забороняємо перенесення тексту */
-    }
-
-    
-        .directions {
-            bottom: 90px; /* Піднімаємо вище від нижнього краю */
-            position: absolute; /* Встановлюємо абсолютне позиціонування для блоку */
-            width: 100%; /* Займаємо всю ширину */
-            display: flex; /* Використовуємо флексбокс для вирівнювання */
-            justify-content: center; /* Центруємо горизонтально */
-        }
-    
 
     .photo {
-        width: 80px; /* Зменшуємо ширину фото */
-        height: 80px; /* Зменшуємо висоту фото */
-        margin-right: 10px; /* Зменшуємо відступ між фото та текстом */
+        width: 120px; /* Збільшена ширина фото */
+        height: 120px; /* Збільшена висота фото */
+        margin-right: 20px; /* Доданий відступ між фото та текстом */
     }
 
     .directions a {
-        font-family: 'Roboto', sans-serif; /* Використовуємо шрифт Roboto */
-        font-size: 14px; /* Розмір шрифту */
+        font-size: 14px; /* Зменшуємо розмір шрифту */
         font-weight: 300; /* Робимо шрифт тоншим */
-        color: #8B4513; /* Коричневий колір тексту */
-        text-decoration: none; /* Видаляємо підкреслення */
-        transition: text-decoration 0.3s ease; /* Плавний перехід для підкреслення */
-        border-bottom: 2px solid transparent; /* Прозора лінія під текстом */
-    }
-
-    .directions a:hover {
-        text-decoration: none; /* Видаляємо звичайне підкреслення */
-        border-bottom: 2px solid #8B4513; /* Додаємо підкреслення - товстий коричневий */
     }
 
     /* Зменшуємо розмір шрифту посилань */
@@ -295,6 +148,3 @@
         font-weight: 300; /* Робимо шрифт тоншим */
     }
 }
-
-
-

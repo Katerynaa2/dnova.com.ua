@@ -1,54 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+
+    <!DOCTYPE html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Покращене слайд-шоу</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <style>
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просте плавне слайдшоу</title>
+    <style>
+        /* Стилі для слайдшоу контейнера */
+        .slideshow-container {
+            position: relative;
+            max-width: 980px; /* Максимальна ширина слайдшоу */
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ccc; /* Рамка для візуального розділення */
+        }
+
+        /* Стилі для кожного слайду */
+        .slide {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 1s ease; /* Плавна зміна прозорості */
+        }
+
+        /* Активний слайд */
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* Стилі для кнопок навігації */
+        .slideshow-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .slideshow-nav a {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/image1.jpg" alt="Зображення 1">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/image2.jpg" alt="Зображення 2">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/image3.jpg" alt="Зображення 3">
-      </div>
+<div class="slideshow-container">
+    <!-- Слайди -->
+    <div class="slide active">
+        <img src="images/image2.jpg" alt="Slide 1">
     </div>
-    <div class="swiper-pagination"></div>
-  </div>
+    <div class="slide">
+        <img src="images/image3.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+        <img src="images/image4.jpg" alt="Slide 3">
+    </div>
+    <div class="slide">
+        <img src="images/image5.jpg" alt="Slide 4">
+    </div>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 5000, // Збільшуємо затримку на 5000 мс
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      effect: 'flip', // Змінюємо тип анімації на flip
-      speed: 1500, // Змінюємо швидкість переміщення між слайдами
-      parallax: true // Додаємо паралакс-ефект
-    });
-  </script>
+    <!-- Навігаційні кнопки -->
+    <div class="slideshow-nav">
+        <a onclick="changeSlide(-1)">❮</a>
+        <a onclick="changeSlide(1)">❯</a>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Автоматична зміна слайдів кожні 5 секунд
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
