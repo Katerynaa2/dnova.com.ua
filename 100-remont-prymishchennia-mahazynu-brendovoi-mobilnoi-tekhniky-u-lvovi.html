@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Влаштування інженерних мереж</title>
+    <title>denova</title>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="objekty/styles.css">
     <link rel="stylesheet" href="objekty/css/header.css">
@@ -11,46 +11,37 @@
     <link rel="stylesheet" href="objekty/css/portfolio.css">
     <link rel="stylesheet" href="objekty/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.styles/contact.css">
-
-
-
     <script src="objects.html" defer></script>
     <script src="contact.js" defer></script>
-
-
-
-
 </head>
 <body>
 
     <div class="bottom-fixed-container">
         <img src="images/Frame-17.jpg" alt="Frame" class="responsive-image">
     </div>
-        <div class="header">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Логотип Компанії">
-            </a>
-            <button class="catalog-button">
-                <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-            </button>
-            <nav class="nav">
-                <a class="nav__link" href="news.html">Новини</a>
-                <a class="nav__link" href="perevahu.html">Переваги</a>
-                <a class="nav__link" href="object.html">Об'єкти</a>
-                <a class="nav__link" href="partners.html">Партнери</a>
-                <a class="nav__link" href="awards.html">Нагороди</a>
-                <a class="nav__link" href="documentation.html">Документація</a>
-                <a class="nav__link" href="vacancies.html">Вакансії</a>
-                <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
-                <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
-            </nav>
-        </div>
+
+    <div class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Логотип Компанії">
+        </a>
+        <h1>Інженерні мережі. Будівництво. Інжиніринг</h1>
+        <button class="catalog-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav">
+            <a class="nav__link" href="news.html">Новини</a>
+            <a class="nav__link" href="perevahu.html">Переваги</a>
+            <a class="nav__link" href="object.html">Об'єкти</a>
+            <a class="nav__link" href="partners.html">Партнери</a>
+            <a class="nav__link" href="awards.html">Нагороди</a>
+            <a class="nav__link" href="documentation.html">Документація</a>
+            <a class="nav__link" href="vacancies.html">Вакансії</a>
+            <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
+        </nav>
     </div>
-   
-    
-    
+
     <div class="catalog-popup" id="catalogPopup">
         <h2>Контакти</h2>
         <p>
@@ -62,9 +53,20 @@
             79014 м. Львів<br>
             вул. Мучна 23, офіс 4<br>
             <strong>Email:</strong> office@denova.сom.ua<br>
-            <strong>Website:</strong> denovs.com.ua
         </p>
     </div>
+
+    <script>
+        document.querySelector('.catalog-button').addEventListener('click', function() {
+            var menu = document.querySelector('.nav');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+        </script>
+
     <div class="container">
         <h1>Будівництво житлового будинку «Z119» у Львові</h1>
         <div class="portfolio-item">
