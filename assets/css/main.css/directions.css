@@ -148,3 +148,33 @@
         font-weight: 300; /* Робимо шрифт тоншим */
     }
 }
+
+@media (max-width: 320px) {
+    .directions-container {
+        margin-top: 50px; /* Ще менший верхній відступ */
+    }
+
+    .directions {
+        flex-direction: column; /* Вертикальне розташування елементів */
+        align-items: center; /* Центруємо елементи по вертикалі */
+        justify-content: center; /* Центруємо елементи по горизонталі */
+        margin-top: 10px; /* Відступ зверху */
+    }
+
+    .photo {
+        width: 60px; /* Зменшена ширина фото */
+        height: 60px; /* Зменшена висота фото */
+        margin-right: 0; /* Відсутність відступу між фото та текстом */
+        margin-bottom: 10px; /* Додаємо відступ знизу */
+    }
+
+    .directions a {
+        font-size: 12px; /* Ще менший розмір шрифту */
+        font-weight: 300; /* Тонший шрифт */
+    }
+
+    ol li a {
+        font-size: 12px; /* Ще менший розмір шрифту посилань */
+        font-weight: 300; /* Тонший шрифт */
+    }
+}
