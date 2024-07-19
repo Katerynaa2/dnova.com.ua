@@ -50,21 +50,23 @@ h2 {
 
 /* Навігація */
 .nav {
-    font-size: 14px; 
+    font-size: 15px; 
     text-transform: uppercase; 
     text-align: center; 
-    margin-top: 13px; 
+    margin-top: 12px; 
+
 }
 
 /* Посилання навігації */
 .nav__link {
     display: inline-block; 
     vertical-align: top; 
-    margin: 0 15px; 
+    margin: 0 22px; 
     position: relative; 
     color: hwb(135 92% 5%); 
     text-decoration: none; 
     transition: color 0.1s linear; 
+
 }
 
 /* Підкреслення посилання */
@@ -107,13 +109,13 @@ h2 {
     }
 
     .header h1 {
-        font-size: 15px; /* Менший шрифт для мобільних */
+        font-size: 14px; /* Менший шрифт для мобільних */
         position: fixed;
         top: 65px; /* Адаптуємо відстань від верхньої частини */
         left: 50%; /* Розміщуємо заголовок посередині */
         transform: translateX(-50%); /* Вирівнюємо по центру */
         margin-top: 20px; /* Зберігаємо відстань від верхньої частини */
-        color: rgb(238, 233, 233); 
+        color: #fff; 
         font-family: 'Montserrat', sans-serif; 
         text-align: center;
         white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */
@@ -177,7 +179,7 @@ h2 {
         left: 50%; /* Розміщуємо заголовок посередині */
         transform: translateX(-50%); /* Вирівнюємо по центру */
         margin-top: 20px; /* Зберігаємо відстань від верхньої частини */
-        color: rgb(238, 233, 233); 
+        color: #fff; 
         font-family: 'Montserrat', sans-serif; 
         text-align: center;
         white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */
@@ -225,7 +227,7 @@ h2 {
         left: 50%; /* Розміщуємо заголовок посередині */
         transform: translateX(-50%); /* Вирівнюємо по центру */
         margin-top: 15px; /* Зберігаємо відстань від верхньої частини */
-        color: rgb(238, 233, 233); 
+        color: #fff; 
         font-family: 'Montserrat', sans-serif; 
         text-align: center;
         white-space: nowrap; /* Запобігає перенесенню тексту на новий рядок */

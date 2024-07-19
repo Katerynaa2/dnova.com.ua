@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DENOVA</title>
+    <title>denova</title>
     <link rel="stylesheet" href="novyny/css/bootom-container.css">
     <link rel="stylesheet" href="novyny/css/news.css">
     <link rel="stylesheet" href="novyny/css/navigation.css">  
@@ -35,7 +35,6 @@
                 <a class="nav__link" href="perevahu.html">Переваги</a>
                 <a class="nav__link" href="object.html">Об'єкти</a>
                 <a class="nav__link" href="partners.html">Партнери</a>
-                <a class="nav__link" href="awards.html">Нагороди</a>
                 <a class="nav__link" href="documentation.html">Документація</a>
                 <a class="nav__link" href="vacancies.html">Вакансії</a>
                 <a class="nav__link" href="#news" id="contactsBtn">Контакти</a> 
@@ -54,21 +53,32 @@
         });
         </script>
     
-    
+    <div class="catalog-popup-background" id="catalogPopupBackground"></div>
     <div class="catalog-popup" id="catalogPopup">
         <h2>Контакти</h2>
         <p>
             <strong>Ярослав Чемеринський</strong><br>
             <em>Директор</em><br><br>
             <strong>Моб. тел.:</strong> +38 067 674 24 99<br>
-            <strong>Роб. тел.:</strong> + 38 032 295 84 62<br>
-            <strong>Email:</strong> yarislav.chemerynskiyi@denobs.com.ua<br><br>
+            <strong>Роб. тел.:</strong> +38 032 295 84 62<br>
+            <strong>Email:</strong> yarislav.chemerynskiyi@denova.com.ua<br><br>
             79014 м. Львів<br>
-            вул. Мучна 23, офіс 4<br>
-            <strong>Email:</strong> office@denova.сom.ua<br>
-            <strong>Website:</strong> denovs.com.ua
+            <a href="https://maps.app.goo.gl/Cw1U95pTBwfFzvrB6" target="_blank" class="map-link">
+                вул. Мучна 23, офіс 4
+            </a><br>
+            <strong>Email:</strong> office@denova.com.ua<br><br>
         </p>
     </div>
+    <script>
+        document.querySelector('.catalog-button').addEventListener('click', function() {
+            var menu = document.querySelector('.nav');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        });
+        </script>
     
     
     <div class="catalog-popup" id="catalogPopup">

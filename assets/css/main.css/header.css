@@ -50,21 +50,23 @@ h2 {
 
 /* Навігація */
 .nav {
-    font-size: 14px; 
+    font-size: 15px; 
     text-transform: uppercase; 
     text-align: center; 
-    margin-top: 13px; 
+    margin-top: 12px; 
+
 }
 
 /* Посилання навігації */
 .nav__link {
     display: inline-block; 
     vertical-align: top; 
-    margin: 0 15px; 
+    margin: 0 22px; 
     position: relative; 
     color: hwb(135 92% 5%); 
     text-decoration: none; 
     transition: color 0.1s linear; 
+
 }
 
 /* Підкреслення посилання */
