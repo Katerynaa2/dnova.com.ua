@@ -133,7 +133,7 @@ h2 {
         left: 0;
         width: 100%;
         background-color: #fff;
-        box-shadow: 0 2px 4px rgba(231, 81, 81, 0.916);
+        box-shadow:hwb(0 4% 96%) ;
         z-index: 999;
     }
 
